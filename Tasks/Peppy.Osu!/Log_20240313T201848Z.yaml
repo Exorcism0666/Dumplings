@@ -1,0 +1,24 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/ppy/osu/releases/download/2024.312.1/install.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Code Quality
+    - Implement a "deferred" renderer (ppy/osu-framework#6190 by @smoogipoo)
+      - Available for testing in the next release, probably.
+    - Fix incorrect disposal pattern (ppy/osu-framework#6211 by @smoogipoo)
+    Online
+    Fix medals which are specific to a game mode not displaying correctly (ppy/osu#27574 by @bdach)
+    Performance
+    Reduce update overhead in osu! playfield when many objects are visible (ppy/osu#27562 by @EVAST9919)
+    Reliability
+    Downgrade realm to work around crashes on latest release (ppy/osu#27585 by @peppy)
+    Running osu! with data stored on an ExFAT drive stopped working with the last release. This will be fixed in this release. If your data is missing, please open your osu! data folder and rename the client_xxx_corrupted.realm file to client.realm (deleting the new one created with a smaller filesize) after completing the update.
+    Fix exports containing zero byte files after import from specific ZIP archives (ppy/osu#27586 by @bdach)
+    Full Changelog: https://github.com/ppy/osu/compare/2024.312.0...2024.312.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/ppy/osu/releases/tag/2024.312.1
+Version: 2024.312.1
+ReleaseTime: 2024-03-12T11:02:19.0000000Z
