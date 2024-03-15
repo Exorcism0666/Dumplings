@@ -1,4 +1,4 @@
-$RepoOwner = 'taers232c/'
+$RepoOwner = 'taers232c'
 $RepoName = 'GAMADV-XTD3'
 
 $Object1 = Invoke-GitHubApi -Uri "https://api.github.com/repos/${RepoOwner}/${RepoName}/releases/latest"
