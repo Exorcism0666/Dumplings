@@ -1,5 +1,5 @@
 $RepoOwner = 'yt-dlp'
-$RepoName = 'yt-dlp-nightly-builds'
+$RepoName = 'yt-dlp'
 
 $Object1 = Invoke-GitHubApi -Uri "https://api.github.com/repos/${RepoOwner}/${RepoName}/releases/latest"
 
