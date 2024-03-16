@@ -1,3 +1,3 @@
 Type: PackageTask
 WinGetIdentifier: Ryujinx.Ryujinx
-Skip: true
+Skip: false
