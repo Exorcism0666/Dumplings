@@ -5,7 +5,7 @@ $this.CurrentState.Version = $Object1.AppInstaller.Version
 
 # Installer
 $this.CurrentState.Installer += [ordered]@{
-  InstallerUrl = $Object1.AppInstaller.MainBundle.Uri
+  InstallerUrl = $Object1.AppInstaller.MainPackage.Uri
 }
 
 switch -Regex ($this.Check()) {
