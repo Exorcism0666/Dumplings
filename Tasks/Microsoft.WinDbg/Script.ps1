@@ -1,4 +1,4 @@
-$Object1 = Invoke-RestMethod -Uri 'https://releases.arc.net/windows/prod/Arc.appinstaller'
+$Object1 = Invoke-RestMethod -Uri 'https://aka.ms/windbg/download'
 
 # Version
 $this.CurrentState.Version = $Object1.AppInstaller.Version
