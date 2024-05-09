@@ -13,7 +13,7 @@ $this.CurrentState.Installer += [ordered]@{
 }
 $this.CurrentState.Installer += [ordered]@{
   Architecture = 'arm64'
-  InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.msi') -and $_.name.Contains('arm64') -and !$_.name.Contains('x64') }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
+  InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.msi') -and $_.name.Contains('arm64') -and !$_.name.Contains('x64https://github.com/microsoft/winget-pkgs/issues/152768#issuecomment-2102688064') }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
 }
 
 # ReleaseTime
