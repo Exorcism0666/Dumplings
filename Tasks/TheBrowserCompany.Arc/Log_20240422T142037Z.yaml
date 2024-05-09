@@ -1,7 +1,0 @@
-Installer:
-- Architecture: x64
-  InstallerUrl: https://releases.arc.net/windows/prod/0.19.0.23547/Arc.x64.msix
-- Architecture: arm64
-  InstallerUrl: https://releases.arc.net/windows/prod/0.19.0.23547/Arc.arm64.msix
-Locale: []
-Version: 0.19.0.23547
