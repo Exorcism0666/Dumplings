@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/1.3.4/Pinokio-1.3.4-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 1.3.4.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    1. 3.4: Bug Fix Update
+    1. Remove constant logging: a recent release added a feature that keeps the most up-to-date system info to be fed into API calls. But this was not optimal because it kept refreshing the machine every few seconds even when nothing is running. Removed this and instead queries the system info only right before making an RPC call, which has the same effect but no need to keep querying.
+    2. Registry fix: Some people experienced issues with recent releases where Pinokio kept saying the "registry" module is not installed. This was because of some terminal parsing issue, and has been fixed.
+    3. Proxy port: Do NOT use the default 8000 to create proxies. Instead, the proxy ports start from 42420. When a proxy.start API call is made, Pinokio scans open ports starting from 42420 and starts a proxy using the first discovered port.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/1.3.4
+Version: 1.3.4
+ReleaseTime: 2024-04-02T17:34:44.0000000Z
