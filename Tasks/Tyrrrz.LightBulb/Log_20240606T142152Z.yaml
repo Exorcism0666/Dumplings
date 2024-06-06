@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/Tyrrrz/LightBulb/releases/download/2.5.3/LightBulb-Installer.win-arm64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Bump the actions group with 5 updates by @dependabot in https://github.com/Tyrrrz/LightBulb/pull/307
+    - Bump the nuget group across 1 directory with 3 updates by @dependabot in https://github.com/Tyrrrz/LightBulb/pull/311
+    - Adjust slider bounds for day/night temperature dynamically, based on the current values by @Tyrrrz in https://github.com/Tyrrrz/LightBulb/pull/312
+    - Warn when using a development build by @Tyrrrz in https://github.com/Tyrrrz/LightBulb/pull/313
+    - Don't crash the application if the auto-update check fails by @Tyrrrz in https://github.com/Tyrrrz/LightBulb/pull/316
+    New Contributors
+    - @dependabot made their first contribution in https://github.com/Tyrrrz/LightBulb/pull/307
+    Full Changelog: https://github.com/Tyrrrz/LightBulb/compare/2.5.2...2.5.3
+- Key: ReleaseNotesUrl
+  Value: https://github.com/Tyrrrz/LightBulb/releases/tag/2.5.3
+Version: 2.5.3
+ReleaseTime: 2024-06-06T13:36:39.0000000Z
