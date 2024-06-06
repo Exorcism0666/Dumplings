@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.5.9/AppFlowy-0.5.9-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.5.9/AppFlowy-0.5.9-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.5.9 - 06/06/2024
+    New Features
+    - Video embedding on Document page.
+    - Redesigned sidebar for Desktop and Mobile.
+    - Hotkey (Cmd/Ctrl + 0) added to reset app scale.
+    Bug Fixes
+    - Fixed inability to delete content in board header.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.5.9
+Version: 0.5.9
+ReleaseTime: 2024-06-06T03:19:18.0000000Z
