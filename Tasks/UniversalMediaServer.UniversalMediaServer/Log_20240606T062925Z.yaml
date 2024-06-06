@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/14.0.2/UMS-14.0.2.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Summary
+    This is a small release to fix an important bug where empty TV series folders appeared in the Media Library for content that is not shared.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/14.0.2
+Version: 14.0.2
+ReleaseTime: 2024-06-06T05:56:46.0000000Z
