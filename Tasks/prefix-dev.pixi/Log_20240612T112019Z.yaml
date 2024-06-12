@@ -1,0 +1,42 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/prefix-dev/pixi/releases/download/v0.24.0/pixi-x86_64-pc-windows-msvc.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    ✨ Highlights
+    - You can now run in a more isolated environment on unix machines, using pixi run --clean-env TASK_NAME.
+    - You can new easily clean your environment with pixi clean or the cache with pixi clean cache
+    📃 Details
+    Added
+    - Add pixi clean command by @ruben-arts in #1325
+    - Add --clean-env flag to tasks and run command by @ruben-arts in #1395
+    - Add description field to task by @jjjermiah in #1479
+    - Add pixi file to the environment to add pixi specific details by @ruben-arts in #1495
+    Changed
+    - Project environment cli by @baszalmstra in #1433
+    - Update task list console output by @vigneshmanick in #1443
+    - Upgrade uv by @tdejager in #1436
+    - Sort packages in list_global_packages by @dhirschfeld in #1458
+    - Added test for special chars wheel filename by @tdejager in #1454
+    Documentation
+    - Improve multi env tasks documentation by @ruben-arts in #1494
+    Fixed
+    - Use the activated environment when running a task by @tdejager in #1461
+    - Fix authentication pypi-deps for download from lockfile by @tdejager in #1460
+    - Display channels correctly in pixi info by @ruben-arts in #1459
+    - Render help for --frozen by @ruben-arts in #1468
+    - Don't record purl for non conda-forge channels by @nichmor in #1451
+    - Use best_platform to verify the run platform by @ruben-arts in #1472
+    - Creation of parent dir of symlink by @ruben-arts in #1483
+    - pixi install --all output missing newline by @vigneshmanick in #1487
+    - Don't error on already existing dependency by @ruben-arts in #1449
+    - Remove debug true in release by @ruben-arts in #1477
+    New Contributors
+    - @dhirschfeld made their first contribution in #1458
+    Full commit history
+- Key: ReleaseNotesUrl
+  Value: https://github.com/prefix-dev/pixi/releases/tag/v0.24.0
+Version: 0.24.0
+ReleaseTime: 2024-06-12T10:38:06.0000000Z
