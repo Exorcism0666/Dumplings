@@ -21,8 +21,9 @@ jobs:
           repository: microsoft/winget-pkgs
           path: winget-pkgs
       - name: Install WinGet client
-        run: cd Utilities
-        run: .\InstallWinGet.ps1
+        run: |
+          cd Utilities
+          .\InstallWinGet.ps1
         working-directory: Dumplings
         shell: powershell
         env:
