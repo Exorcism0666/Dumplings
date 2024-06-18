@@ -1,0 +1,45 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.06.17.232743/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/90c3721a322756bb7f4ca10ceb73744500bee37e
+
+    A description of the various files are in the README
+
+    Changelog
+    Extractor changes
+    - brightcove: Upgrade requests to HTTPS (#10202) by bashonly
+    - francetv
+      - Detect and raise errors for DRM (#10165) by bashonly
+      - Fix extractor (#10177) by bashonly
+    - generic: Add key_query extractor-arg by bashonly
+    - khanacademy: Fix extractors (#9136) by c-basalt
+    - nhkradiru: Fix extractor (#10106) by garret1317
+    - orf: on: Support segmented episodes (#10053) by seproDev
+    - patreoncampaign: Fix campaign_id extraction (#10070) by bashonly
+    - podbayfm: Fix extraction (#10195) by bashonly, seproDev
+    - rtvslo.si: show: Add extractor (#8418) by JSubelj, seproDev
+    - soundcloud: Fix download format extraction (#10125) by bashonly
+    - sproutvideo: Add extractors (#10098) by bashonly, TheZ3ro
+    - tiktok: Detect and raise when login is required (#10124) by bashonly
+    - tubitv
+      - Fix extractor (#9975) by chilinux
+      - series: Fix extractor (#10116) by bashonly
+    - youtube: tab: Fix channel metadata extraction (#10071) by bashonly, shoxie007
+    Downloader changes
+    - hls: Apply extra_param_to_key_url from info dict by bashonly
+    Networking changes
+    - Request Handler: requests: Bump minimum requests version to 2.32.2 (#10079) by bashonly
+    Misc. changes
+    - build
+      - Bump Pyinstaller to >=6.7.0 for all builds (#10069) by bashonly, seproDev
+      - Cache dependencies for macos job (#10088) by bashonly
+      - Use macos-12 image for yt-dlp_macos (#10063) by bashonly
+    - cleanup: Add more ruff rules (#10149) by seproDev
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.06.17.232743
+Version: 2024.06.17.232743
+ReleaseTime: 2024-06-17T23:32:44.0000000Z
