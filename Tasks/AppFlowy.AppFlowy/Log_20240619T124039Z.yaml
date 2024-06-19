@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.0/AppFlowy-0.6.0-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.0/AppFlowy-0.6.0-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.6.0 - 19/06/2024
+    New Features
+    - Introduced the "Space" feature to help you organize your pages more efficiently.
+    Bug Fixes
+    - Resolved shortcut conflicts on the board page.
+    - Resolved an issue where underscores could cause the editor to freeze.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.6.0
+Version: 0.6.0
+ReleaseTime: 2024-06-19T11:35:31.0000000Z
