@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.1/AppFlowy-0.6.1-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.1/AppFlowy-0.6.1-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.6.1 - 20/06/2024
+    New Features
+    - Introduced "Spaces" for organizing pages into multiple sections, either privately or shared with entire teams.
+    Bug Fixes
+    - Resolved issues with editing Kanban card titles and checklist items.
+    - Resolved an issue where underscores could cause the editor to freeze.
+    - Resolved an issue where the toolbar could be blocked by the keyboard on some Android devices.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.6.1
+Version: 0.6.1
+ReleaseTime: 2024-06-20T13:27:38.0000000Z
