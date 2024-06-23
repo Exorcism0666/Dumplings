@@ -1,0 +1,53 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.1/dbeaver-ce-24.1.1-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.1/dbeaver-ce-24.1.1-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - AI: GPT-4o model was supported
+                - SQL Editor:
+                    - Auto-save editor setting was enabled by default
+                    - ILIKE keyword was supported
+                    - Support for unsigned numbers in GROUP BY clause was added
+                    - Syntax highlighting and outline viewer support parameter changes in SQL Processing settings
+                    - Links to the SQL Editor and Visual Query Builder were added to the Context menu
+                    - Buttons in the right toolbar were renamed
+                    - Print mode in ER Diagrams and Execution plan was fixed
+                    - Saving Diagram outside the workspace was fixed
+                - Data Editor:
+                    - Information about table unique key is displayed in the grid
+                    - BETWEEN and LIKE keywords were added to filetr autocomplection
+                - Data transfer:
+                    - Export of data with backticks was fixed (thanks to @diashalabi)
+                    - Export of binary columns in JSON format was fixed
+                - General:
+                    - Ability to restore default settings was fixed in SQL Editor Formatting settings, SQL Editor settings, SQL Editor Commit type, Error handling settings, and Hex Editor default width
+                    - Creating a view from the UI was fixed
+                    - Buttons display when creating new dashboard was fixed
+                    - New table creation was fixed
+                - The following drivers were updated:
+                    - Firebird to version 5.0.4
+                    - Redshift to 2.1.0.29
+                    - Informix to 4.50.JC10W1
+                - Databases
+                    - Altibase: Search for server properties was added (thanks to @zennken)
+                    - BigQuery: Ability to see bytes billed in Statistics panel in the Data Editor was added
+                    - Cubrid:
+                        - Execution plan coloring was enhanced (thanks to @hwany7seo)
+                        - Ability to create a table via UI was added (thanks to @longhaseng52)
+                        - DDL display for a view was added together with the ability to display the list of indexes, synonyms, serials, triggers, and procedures (thanks to @longhaseng52)
+                        - Ping query for keep connection alive was added (thanks to @rathana-pvs)
+                        - Partition display was added (thanks to @rathana-pvs)
+                    - PostgreSQL:
+                        - If database field in connection settings is empty, user name is used as a database name
+                        - Work of 'Use fully qualified names' setting was fixed for views
+                    - Redis: Key settings were fixed
+                    - Redshift: Constraint creation was fixed
+                    - Vertica: Stored procedures handling in SQL Editor was fixed
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.1.1
+Version: 24.1.1
+ReleaseTime: 2024-06-23T16:52:09.0000000Z
