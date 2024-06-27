@@ -1,0 +1,11 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v4.6.2/Beekeeper-Studio-Setup-4.6.2.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: Some minor bug fixes for the 4.6 release
+- Key: ReleaseNotesUrl
+  Value: https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v4.6.2
+Version: 4.6.2
+ReleaseTime: 2024-06-27T18:47:51.0000000Z
