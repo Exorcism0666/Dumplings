@@ -1,0 +1,23 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.2/AppFlowy-0.6.2-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.2/AppFlowy-0.6.2-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.6.2 - 01/07/2024
+    New Features
+    - Added support for duplicating spaces.
+    - Added support for moving pages across spaces.
+    - Undo markdown formatting with Ctrl + Z or Cmd + Z.
+    - Improved shortcuts settings UI.
+    Bug Fixes
+    - Fixed unable to zoom in with Ctrl and + or Cmd and + on some keyboards.
+    - Fixed unable to paste nested lists in existing lists.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.6.2
+Version: 0.6.2
+ReleaseTime: 2024-07-02T08:26:29.0000000Z
