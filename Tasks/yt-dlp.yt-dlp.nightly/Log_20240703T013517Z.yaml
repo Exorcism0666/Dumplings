@@ -1,0 +1,26 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.07.02.232715/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/d28aa87e215991023a0b2ea6fae0e000f283dcd1
+
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - Fix --compat-opt allow-unsafe-ext (#10336) by bashonly, rdamas
+    Extractor changes
+    - banbye: Fix extractor (#10332) by PatrykMis, seproDev
+    - murrtube: Fix extractor (#9249) by DrakoCpp
+    - zaiko: Support JWT video URLs (#10130) by pzhlkj6612
+    Postprocessor changes
+    - embedthumbnail: Fix embedding with mutagen (#10337) by bashonly
+    Misc. changes
+    - cleanup: Miscellaneous: 93d33cb by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.07.02.232715
+Version: 2024.07.02.232715
+ReleaseTime: 2024-07-02T23:32:19.0000000Z
