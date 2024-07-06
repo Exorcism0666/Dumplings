@@ -1,0 +1,24 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.07.05.232716/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/2469119490d7e0397ebbf5c5ae327316f955eef2
+
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - Address gaps in allowed extensions (#10362) by bashonly
+    - Fix --ignore-no-formats-error (#10345) by Grub4K
+    Extractor changes
+    - abematv: Extract availability (#10348) by middlingphys
+    - douyutv: Do not use dangerous javascript source/URL (#10347) by LeSuisse
+    - vidyard: Add extractor (#10155) by exterrestris
+    - vimeo: Fix password-protected video extraction (#10341) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.07.05.232716
+Version: 2024.07.05.232716
+ReleaseTime: 2024-07-05T23:32:27.0000000Z
