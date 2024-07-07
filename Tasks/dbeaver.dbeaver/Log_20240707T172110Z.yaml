@@ -1,0 +1,50 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.2/dbeaver-ce-24.1.2-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.2/dbeaver-ce-24.1.2-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - SQL Editor:
+                    - Performance in Smart mode of Blank line as a statement delimiter was enhanced
+                    - Ability to show all SQL scripts from the main toolbar was added
+                    - Syntax highlighting for functions with multiple arguments was fixed
+                    - SQL datatype color use was corrected
+                    - DROP statement support was added to Outline
+                - Metadata Editor: Foreign Key creation dialog UIX was improved
+                - Data Editor:
+                    - Indication of the table read-only/editable mode was added
+                    - Information about active unique key used for data edit was added
+                    - Customise and Save filter buttons were moved to the dropdown
+                    - Issue with too small Result Set Order/Filter Settings window was resolved
+                    - Rollback timer flickering was fixed
+                - Query Manager: information about database schema and catalog was added to the detailed record view
+                - Simple Structure Compare: issue with long file names was resolved
+                - Connectivity:
+                    - Issue with default SSH connection timeout was resolved
+                    - Driver downloading problem reporting was fixed
+                - General:
+                    - Incorrect button behavior in the confirmation dialog was fixed
+                    - Security credential encryption was enhanced (thanks to @longhaseng52)
+                    - Toolbar and Data Editor background on the Dark theme was improved
+                    - Smart commit mode indication was fixed
+                    - Issue with metadata cache reading was resolved
+                    - Automatic resize of connection dialog and tasks dialogs was fixed
+                - Databases:
+                    - Clickhouse:
+                        - Complex structures handling was fixed
+                        - Clickhouse driver was updated to version 0.6.1
+                    - CUBRID: 'db_server' information was added to the Database Navigator
+                    - Oracle: Connection error in the application downloaded from the Microsoft Store was fixed
+                    - PostgreSQL: Dollar-quoted string parsing was fixed
+                    - SQL Server:
+                        - Issue with resultset primary key detection was resolved
+                        - Duplicated output when running stored procedures was fixed
+                        - NTLM Authentication was fixed
+                        - Datetime datatype representation was fixed
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.1.2
+Version: 24.1.2
+ReleaseTime: 2024-07-07T16:27:06.0000000Z
