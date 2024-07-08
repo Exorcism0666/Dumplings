@@ -1,0 +1,35 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.07.07.232743/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/39bc699d2e6e39b26af028cc09a7b1d460d00e31
+
+    A description of the various files are in the README
+
+    Important changes
+    - Security: [ie/douyutv] Do not use dangerous javascript source/URL
+      - A dependency on potentially malicious third-party JavaScript code has been removed from the Douyu extractors
+    Changelog
+    Core changes
+    - Address gaps in allowed extensions (#10362) by bashonly
+    - Fix --ignore-no-formats-error (#10345) by Grub4K
+    Extractor changes
+    - abematv: Extract availability (#10348) by middlingphys
+    - chzzk: Extract with API v3 (#10363) by hui1601
+    - douyutv: Do not use dangerous javascript source/URL (#10347) by LeSuisse
+    - jiosaavn: playlist: Support featured playlists (#10382) by harbhim
+    - vidyard: Add extractor (#10155) by exterrestris
+    - vimeo: Fix password-protected video extraction (#10341) by bashonly
+    - vtv: Add extractors (#10173) by DinhHuy2010
+    - yle_areena
+      - Fix metadata extraction (#10380) by seproDev
+      - Fix subtitle extraction (#10379) by Grub4K
+    Misc. changes
+    - cleanup: Miscellaneous: b337d29 by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.07.07.232743
+Version: 2024.07.07.232743
+ReleaseTime: 2024-07-07T23:34:17.0000000Z
