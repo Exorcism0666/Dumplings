@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.36.0/WinSSHTerm-2.36.0-x64.msi
+- Architecture: arm64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.36.0/WinSSHTerm-2.36.0-arm64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Added puttygen as client software (File->Preferences->Puttygen)
+    - Added a new environment variable for puttygen (see point 32 in the FAQ section)
+    - Multi-Input: Send text to detached terminal windows now possible
+    - New option to prevent closing detached terminal windows on exit (File->Preferences->General)
+    - Cloning a shared connection to a local one now possible in the Connections window
+    - Turned off GSSAPI authentication in PuTTY as WinSSHTerm doesn't support it
+    - Changed code for caching encrypted data
+    - Bug fix: Using shortcuts in detached terminal windows could lead to an unexpected behaviour
+    - Bug fix: Pageant isn't correctly started in some cases when starting from the Preferences window
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WinSSHTerm/WinSSHTerm/releases/tag/2.36.0
+Version: 2.36.0
+ReleaseTime: 2024-07-08T21:41:05.0000000Z
