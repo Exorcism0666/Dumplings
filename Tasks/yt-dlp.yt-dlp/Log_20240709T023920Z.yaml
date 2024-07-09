@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp/releases/download/2024.07.09/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - Do not alter default format selection when simulated (#9862) by seproDev
+    Extractor changes
+    - youtube: Remove broken n function extraction fallback (#10396) by pukkandan, seproDev
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp/releases/tag/2024.07.09
+Version: 2024.07.09
+ReleaseTime: 2024-07-09T01:57:03.0000000Z
