@@ -1,0 +1,16 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.36.1/WinSSHTerm-2.36.1-x64.msi
+- Architecture: arm64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.36.1/WinSSHTerm-2.36.1-arm64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Added a new menu item "Start Puttygen" to "Tools"
+    - Bug fix: Chocolatey shim is not properly handled for Puttygen
+    - Bug fix: Missing text in the window that shows the download link for Puttygen
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WinSSHTerm/WinSSHTerm/releases/tag/2.36.1
+Version: 2.36.1
+ReleaseTime: 2024-07-09T21:05:20.0000000Z
