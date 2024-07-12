@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.36.2/WinSSHTerm-2.36.2-x64.msi
+- Architecture: arm64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.36.2/WinSSHTerm-2.36.2-arm64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Added menu items for detaching and re-attaching all terminals to "Tools"
+    - Bug fix: Chocolatey shim is still not properly handled for Puttygen
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WinSSHTerm/WinSSHTerm/releases/tag/2.36.2
+Version: 2.36.2
+ReleaseTime: 2024-07-12T20:15:01.0000000Z
