@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.43.1/lazygit_0.43.1_Windows_32-bit.zip
+- Architecture: x64
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.43.1/lazygit_0.43.1_Windows_x86_64.zip
+- Architecture: arm
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.43.1/lazygit_0.43.1_Windows_armv6.zip
+- Architecture: arm64
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.43.1/lazygit_0.43.1_Windows_arm64.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    Fixes 🔧
+    - Fix language auto detection by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3744
+    Full Changelog: https://github.com/jesseduffield/lazygit/compare/v0.43.0...v0.43.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/jesseduffield/lazygit/releases/tag/v0.43.1
+Version: 0.43.1
+ReleaseTime: 2024-07-13T10:28:56.0000000Z
