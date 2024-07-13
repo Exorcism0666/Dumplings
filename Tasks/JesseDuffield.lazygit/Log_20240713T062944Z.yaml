@@ -1,0 +1,132 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.43.0/lazygit_0.43.0_Windows_32-bit.zip
+- Architecture: x64
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.43.0/lazygit_0.43.0_Windows_x86_64.zip
+- Architecture: arm
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.43.0/lazygit_0.43.0_Windows_armv6.zip
+- Architecture: arm64
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.43.0/lazygit_0.43.0_Windows_arm64.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    Thanks to all contributors who helped make this release happen! There's a lot of first-time contributors on this release as well so kudos to you all.
+    There's quite a few things in this release. I'm going to single out a couple that have changed my workflow.
+    Base branch stuff
+    https://github.com/user-attachments/assets/9f50824a-6221-4ca0-9cf3-a4d45cc43262
+    Easier rebase onto base branch
+    (Add command to rebase onto base branch by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3615)
+    When my feature branch gets out of date with the main branch, I like to rebase it onto the main branch. Up until now, that's required:
+    - Navigating to the main branch
+    - Pressing 'f' to fast-forward it onto its upstream branch
+    - Pressing 'r' to rebase the checked-out branch onto the main branch
+    That takes too long! Now you can just press 'r' followed by 'b' to rebase onto the base branch (which defaults to origin/main).
+    See the divergence count from the base branch
+    (Divergence from base branch display by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3613)
+    You can now also configure to see the divergence from a branch and its base branch with the following config:
+    gui:
+        showDivergenceFromBaseBranch: arrowAndNumber # or 'onlyArrow'
+    This shows the divergence count in blue, next to the yellow count of divergence from the upstream branch. This is admittedly noisy, so it's an opt-in feature. But I think the noise is worth it.
+    If you set the config value to 'onlyArrow' it's a lot less noisy:
+    See detailed divergence from base branch
+    (Add command to show divergence from base branch as a left-right log by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3614)
+    By pressing 'u' then 'b' on a branch you can see the divergence view for that branch compared to its base branch
+    Improved 'Find commit for fixup' feature
+    (Improve the "Find base commit for fixup" command by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3602)
+    'Find commit for fixup' is not a very catchy name for this feature but I can't think of anything better at the moment. Nevertheless! The idea is that you often want to know for a given set of changes, which commit ought they be included in? Just press ctrl+f when in the files panel and lazygit will jump the cursor to the appropriate commit to fixup.
+    With this release, the feature is smarter and more lenient so it's more likely to find you a match. If you haven't tried this out you should really give it a go!
+    https://github.com/user-attachments/assets/220e4190-b631-40a5-b8dc-7d1a6116ab09
+    Other Enhancements 🔥
+    - Add Squash merge by @noahfraiture in https://github.com/jesseduffield/lazygit/pull/3566
+      - Now when you press shift+m you get the option to do a regular merge or a squash merge. If you already have muscle memory for regular merge; don't worry: it's the same sequence of keypresses.
+    - Improve "Find base commit for fixup" command when there are changes for master commits by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3645
+    - Allow setting the similarity threshold for detecting renames by @isti115 in https://github.com/jesseduffield/lazygit/pull/3025
+      - For this, press ')' and '(' to increase/decrease the similarity threshold.
+    https://github.com/user-attachments/assets/a85825b8-9110-4090-ba89-ba8221cbc7a8
+    - Reduce memory consumption when loading large number of commits by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3687
+      - 2-6x less memory usage when dealing with lots of commits. HUGE improvement.
+    - Focus on local commits view after moving code into new commit by @AzraelSec in https://github.com/jesseduffield/lazygit/pull/3577
+    - Add property outputTitle to CustomCommand by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3579
+    - Add user config gui.expandedSidePanelWeight by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3623
+      - You can now increase the height of the selected side panel when you've configured the accordion effect
+      gui:
+        expandFocusedSidePanel: true
+        expandedSidePanelWeight: 3
+    - Support range select for amending commit attributes by @AzraelSec in https://github.com/jesseduffield/lazygit/pull/3587
+      - This lets you select a range of commits and update the author / set the co-author on all of them at once.
+    https://github.com/user-attachments/assets/2d3e15a9-4acc-4b81-b0e2-a34490ad77ad
+    - Show "exec" todos in the list of rebase todos by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3654
+    - Search the model instead of the view in the commits panel by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3642
+    - Add prompt to the remote branch checkout menu by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3652
+    - Always show the "Discard unchanged changes" menu item by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3683
+    - Show current value in menus by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3628
+    - Add command to paste commit message from clipboard by @WaterLemons2k in https://github.com/jesseduffield/lazygit/pull/3676
+    - Stagger popup panels by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3694
+    - Make commit author length configurable by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3688 (initial implementation by @anikiforov)
+    - Make opening git difftool more consistent by @part22 in https://github.com/jesseduffield/lazygit/pull/3691
+    - Update tracking behaviour for branches created from remote branches by @part22 in https://github.com/jesseduffield/lazygit/pull/3712
+    - Allow setting a default name when creating new branches by @elliotcubit in https://github.com/jesseduffield/lazygit/pull/3487
+    - Add Token credential request handling by @gmlexx in https://github.com/jesseduffield/lazygit/pull/3647
+    - Switch between multiple log views by @mkock in https://github.com/jesseduffield/lazygit/pull/3354
+    - Faster startup by @jwhitley in https://github.com/jesseduffield/lazygit/pull/3284
+    - Extend icon coverage on remotes and file extensions by @hasecilu in https://github.com/jesseduffield/lazygit/pull/3484
+    - Add nerdfont icons for .bicep & .bicepparam files by @scottmckendry in https://github.com/jesseduffield/lazygit/pull/3053
+    Fixes 🔧
+    - Fix tooltip for fixup command by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3601
+    - Fix pushing to branch when upstream not stored locally by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3619
+    - (#3618) Fix pushing a branch to remote with a different name causing error by @JordanllHarper in https://github.com/jesseduffield/lazygit/pull/3630
+    - Fix secondary window resize by @AzraelSec in https://github.com/jesseduffield/lazygit/pull/3637
+    - Fix truncation of branch names containing non-ASCII characters by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3685
+    - Fix duplicate keybinding suggestions in status bar after switching repos by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3660
+    - Fix PTY layout problems by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3658
+    - Fix custom patch operations for added files by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3684
+    - Improve render performance by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3686
+    - Fix wrong highlight in staging panel when entering file with only staged changes by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3667
+    - Always reapply filters on filtered views when model changes, even inactive ones by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3697
+    - Turn off the highlight of the suggestions panel when it loses focus by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3696
+    - Fix running lazygit with a language other than English on Windows by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3705
+    - Fix multi selection stage/discard not working for files with substrings by @brandondong in https://github.com/jesseduffield/lazygit/pull/3599
+    - Only add commit prefix if branch name matches regex pattern by @phaze-ZA in https://github.com/jesseduffield/lazygit/pull/3703
+    Maintenance ⚙️
+    - Add default lazygit config generation in Config.md from JSON schema by @karimkhaleel in https://github.com/jesseduffield/lazygit/pull/3565
+    - Remove hint about Config.md from PR template by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3578
+    - Add copyloopvar to enabled linters by @kyu08 in https://github.com/jesseduffield/lazygit/pull/3586
+    - Add lint to make target by @kyu08 in https://github.com/jesseduffield/lazygit/pull/3593
+    - Delete the TODO comment about enabling goconst in the future from .golangci.yml by @kyu08 in https://github.com/jesseduffield/lazygit/pull/3596
+    - Pin golangci version to 1.58 by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3611
+    - Improve branch and reflog loading when sorting branches by date by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3609
+    - Fix boolean config keys not appearing in the generated Config.md by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3622
+    - Make profiling easier by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3634
+    - Update rebase_onto demo test to match new the rebase menu title by @AzraelSec in https://github.com/jesseduffield/lazygit/pull/3636
+    - Include demos when running integration tests on CI by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3640
+    - Fix reporting of unexpected selections in integration tests by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3662
+    - Convert TranslationSets to json by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3649
+    - Fix go generate on windows by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3706
+    - Update translations from Crowdin by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/3707
+    - Bump actions/checkout, actions/setup-go, actions/cache/restore, actions/cache/save by @kyu08 in https://github.com/jesseduffield/lazygit/pull/3594
+    - Check for fixup commits on CI by @jesseduffield in https://github.com/jesseduffield/lazygit/pull/3742
+    Docs 📖
+    - Upgrade to Alpine Linux v3.19 by @fossdd in https://github.com/jesseduffield/lazygit/pull/3541
+    - Add flox install by @bryanhonof in https://github.com/jesseduffield/lazygit/pull/3656
+    New Contributors
+    - @JordanllHarper made their first contribution in https://github.com/jesseduffield/lazygit/pull/3630
+    - @anikiforov made their first contribution in https://github.com/jesseduffield/lazygit/pull/3625
+    - @WaterLemons2k made their first contribution in https://github.com/jesseduffield/lazygit/pull/3676
+    - @noahfraiture made their first contribution in https://github.com/jesseduffield/lazygit/pull/3566
+    - @fossdd made their first contribution in https://github.com/jesseduffield/lazygit/pull/3541
+    - @scottmckendry made their first contribution in https://github.com/jesseduffield/lazygit/pull/3053
+    - @elliotcubit made their first contribution in https://github.com/jesseduffield/lazygit/pull/3487
+    - @bryanhonof made their first contribution in https://github.com/jesseduffield/lazygit/pull/3656
+    - @gmlexx made their first contribution in https://github.com/jesseduffield/lazygit/pull/3647
+    - @mkock made their first contribution in https://github.com/jesseduffield/lazygit/pull/3354
+    - @phaze-ZA made their first contribution in https://github.com/jesseduffield/lazygit/pull/3703
+    - @hasecilu made their first contribution in https://github.com/jesseduffield/lazygit/pull/3484
+    Full Changelog: https://github.com/jesseduffield/lazygit/compare/v0.42.0...v0.43.0
+    Shameless Plug
+    I (Jesse) quit my day job and co-founded Subble, a startup that helps your company manage its SaaS subscriptions (discovery of subscriptions, onboarding/offboarding etc) to save you time and money. Check it out! https://www.subble.com/
+- Key: ReleaseNotesUrl
+  Value: https://github.com/jesseduffield/lazygit/releases/tag/v0.43.0
+Version: 0.43.0
+ReleaseTime: 2024-07-13T05:39:38.0000000Z
