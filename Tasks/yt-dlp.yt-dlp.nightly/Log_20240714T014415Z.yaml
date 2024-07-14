@@ -1,0 +1,30 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.07.13.232701/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/150ecc45d9cacc919550c13b04fd998ac5103a6b
+
+    A description of the various files are in the README
+
+    Changelog
+    Extractor changes
+    - box: Support enterprise URLs (#10419) by seproDev
+    - tiktok: live: Fix room ID extraction (#10408) by mokrueger
+    - tv5monde: Support browser impersonation (#10417) by bashonly (With fixes in cc1a309)
+    - youtube
+      - Avoid poToken experiment player responses (#10456) by seproDev
+      - Invalidate nsig cache from < 2024.07.09 (#10401) by bashonly
+    Networking changes
+    - Add legacy_ssl request extension (#10448) by coletdjnz
+    - Request Handler: curl_cffi: Support curl_cffi 0.7.X by coletdjnz
+    Misc. changes
+    - build
+      - Include curl_cffi in yt-dlp_linux by bashonly
+      - Pin curl-cffi to 0.5.10 for Windows by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.07.13.232701
+Version: 2024.07.13.232701
+ReleaseTime: 2024-07-13T23:32:55.0000000Z
