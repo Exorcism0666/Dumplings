@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.4/AppFlowy-0.6.4-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.4/AppFlowy-0.6.4-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.6.4 - 16/07/2024
+    New Features
+    - Enhanced the message style on the AI chat page.
+    - Added the ability to choose cursor color and selection color from a palette in settings page.
+    Bug Fixes
+    - Optimized the performance for loading recent pages.
+    - Fixed an issue where the cursor would jump randomly when typing in the document title on mobile.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.6.4
+Version: 0.6.4
+ReleaseTime: 2024-07-16T08:38:46.0000000Z
