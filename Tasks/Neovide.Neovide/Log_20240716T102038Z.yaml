@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/neovide/neovide/releases/download/0.13.3/neovide.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    Bug Fixes
+    - fix: use pre-defined font weights only if user does not specify one by @xzbdmw in https://github.com/neovide/neovide/pull/2710
+    Full Changelog: https://github.com/neovide/neovide/compare/0.13.2...0.13.3
+- Key: ReleaseNotesUrl
+  Value: https://github.com/neovide/neovide/releases/tag/0.13.3
+Version: 0.13.3
+ReleaseTime: 2024-07-16T09:26:08.0000000Z
