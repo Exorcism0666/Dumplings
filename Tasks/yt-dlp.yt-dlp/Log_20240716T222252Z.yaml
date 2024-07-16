@@ -1,0 +1,43 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp/releases/download/2024.07.16/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - Fix noprogress if test=True with --quiet and --verbose (#10454) by Grub4K
+    - Support auto-tty and no_color-tty for --color (#10453) by Grub4K
+    - update: Fix network error handling (#10486) by bashonly
+    - utils: parse_codecs: Fix parsing of mixed case codec strings by bashonly
+    Extractor changes
+    - adn: Adjust for .com domain change (#10399) by infanf
+    - afreecatv: Fix login and use legacy_ssl (#10440) by bashonly
+    - box: Support enterprise URLs (#10419) by seproDev
+    - digitalconcerthall: Extract HEVC and FLAC formats (#10470) by bashonly
+    - dplay: Fix extractors (#10471) by bashonly
+    - epidemicsound: Support sound effects URLs (#10436) by iancmy
+    - generic: Fix direct video link extensions (#10468) by bashonly
+    - picarto: Fix extractors (#10414) by Frankgoji
+    - soundcloud: permalink, user: Extract tracks only (#10463) by DunnesH
+    - tiktok: live: Fix room ID extraction (#10408) by mokrueger
+    - tv5monde: Support browser impersonation (#10417) by bashonly (With fixes in cc1a309)
+    - youtube
+      - Avoid poToken experiment player responses (#10456) by seproDev (With fixes in 16da8ef)
+      - Invalidate nsig cache from < 2024.07.09 (#10401) by bashonly
+      - Reduce android client priority (#10467) by seproDev
+    Networking changes
+    - Add legacy_ssl request extension (#10448) by coletdjnz
+    - Request Handler: curl_cffi: Support curl_cffi 0.7.X by coletdjnz
+    Misc. changes
+    - build
+      - Include curl_cffi in yt-dlp_linux by bashonly
+      - Pin curl-cffi to 0.5.10 for Windows by bashonly
+    - cleanup: Miscellaneous: 89a161e by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp/releases/tag/2024.07.16
+Version: 2024.07.16
+ReleaseTime: 2024-07-16T22:14:45.0000000Z
