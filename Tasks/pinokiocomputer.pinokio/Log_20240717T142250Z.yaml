@@ -1,0 +1,195 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/2.0.2/Pinokio-2.0.2-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 2.0.2.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Pinokio 2
+    Highlights:
+    1. Autonomous Scripts
+    2. Zero Click Launch
+    3. Customizable Apps
+    4. Pinokio Public Node
+    5. One Click Stop
+    6. Gradio file system
+    7. Disposable apps
+    8. More Efficient Disk Space Usage
+    9. Bug fix
+    10. Install Screen
+    11. Community Features
+    1. Autonomous Scripts
+    With 2.0, Pinokio Scripts can automatically start WITHOUT the user having to click through menu items. This removes a lot of friction in user experience, as well as enabling a lot of interesting use cases optimized for AI. What does this mean?
+    Let's take a look at a quick example. You click exactly once at the beginning when you install, and Pinokio automatically runs install script, and then start script, all without the user having to touch anything:
+
+    IMPORTANT
+    To take advantage of this new feature, in addition to updating to Pinokio 2, you MUST update each individual script, since these scripts have been updated to add the autostart features.
+    Now when you install something on Pinokio, you simply need to click Install and forget about it. And when you come back, you'll find that the app has been not only installed but already running, automatically.
+    1. Instead of having to click the menu buttons, you can program scripts so that simply opening an app will run the relevant script.
+       1. For example, if an app is downloaded but hasn't been installed, run the install script.
+       2. Or, if the app is already installed, automatically launch the app by running the start script.
+    2. This behavior can be defined in the pinokio.js file by setting the default: true for whichever menu item needs to be selected at any given time. Any menu item that's set as default: true will be automatically selected, and when a script is selected it runs.
+       1. Because the menu function gets refreshed every time a script finishes a step, this means it is possible to check for certain condition and start a script when relevant.
+       2. For example, check if an app install folder already exists, and if it exists, run the start script to launch the app. But if the app folder does not exist, run the install script instead.
+    Example:
+    module.exports = {
+      "version": "2.0",
+      "title": "Autostart",
+      "menu": async (kernel, info) => {
+        let installed = info.exists("app/env")
+        if (installed) {
+          // already installed, automatically run "start.json"
+          return [{
+            default: true,
+            text: "start",
+            href: "start.json",
+          }, {
+            text: "install",
+            href: "install.json"
+          }]
+        } else {
+          // not installed. run "install.json"
+          return [{
+            text: "start",
+            href: "start.json",
+          }, {
+            default: true,
+            text: "install",
+            href: "install.json"
+          }]
+        }
+      }]
+    }
+    2. Zero Click Launch
+    1 Click Launchers aren't cool. You know what's cool? 0 Click launchers.
+    You don't even need to open Pinokio. You can open pinokio and its apps directly from a new web browser tab (In this example I'm opening Pinokio from my mac safari browser):
+
+    Before 2.0
+    Previously, using apps in Pinokio meant:
+    1. Open Pinokio
+    2. Find the app you want to use
+    3. Click the app to visit the app page
+    4. Click the "start" button to start the app
+    5. After the app starts, click "web UI" to open the web app
+    See, this is not really a "1 click" experience, is it?
+    After 2.0, with Zero Click Launch
+    You can now use Pinokio apps with the following steps:
+    1. Start typing a pinokio app name in your web browser address bar.
+    2. It will autocomplete the URL (assuming you've visited it before)
+    3. Just open the web page, and you're good to go.
+    No clicks, not even a need to open the Pinokio app (to clarify, Pinokio itself should be running in the background, you just don't need to switch to Pinokio app itself like before, and instead just open apps directly from any web browser like Safari, Chrome, Firefox, Edge, etc.).
+    Basically, local apps work just like visiting online websites.
+    Here's how it works:
+    1. Instant Access: You should be able to open any app INSTANTLY simply by typing its name in a browser address bar.
+       1. Simply start typing the app's name in any browser address bar, and it will autocomplete (if you have visited the app before).
+    2. Instant Launch: You shouldn't have to manually "launch" an app first just to use the app. Think about regular online websites, you simply visit a URL and the website is there. This should be the standard. No need to explicitly launch an app just to use.
+       1. When an app is not already running, it will automatically launch when you visit it, and then present you the UI. All automatically. No clicks needed.
+       2. If the app is already running, then it's instant access. It's almost like using a regular website.
+    1. Launch and Run
+    For example, here's what happens if you visit a Pinokio app that is NOT running yet:
+
+    Notice how I start typing "Stable..." and it autocompletes "Stable Audio" since I have visited that URL before in the browser. Just select that URL just like you do with any online website, and it opens up Pinokio's Stable Audio app.
+    In this case, Stable Audio is not running when I entered the URL, so:
+    1. it first launches the app
+    2. and then automatically redirects to the Web UI.
+    There was NO clicks involved. The redirects were automatic.
+    2. Instant Run
+    And what if the app is ALREADY running? Then it works no different from visiting a regular online website. Here's an example where I start typing "stable diffusion web ui", and the browser autocompletes the URL and I visit the page, and it sends me directly the web app.
+
+    3. Customizable Apps
+    Pinokio is a tool for the tinkerers and hobbyists. It should make it dead simple for people to customize WITHOUT having to touch the code.
+    However this has not been easy. Until now, Pinokio didn't provide an easy way for end users to tinker with custom settings. For example if you want to change where files are stored, you had to edit the pinokio script code.
+    Pinokio 2.0 introduces ENVIRONMENT variables. Scripts can make use of environment variables instead of having to hardcode everything. Each app can have a custom environment variable file.
+    1. Template
+    You can define environment variables by simply updating a file named ENVIRONMENT (which is automatically created when you first install any script). Here's an example ENVIRONMENT file:
+    CHECKPOINT_PATH=./models/llama3.gguf
+    Pinokio scripts may use the variable simply by accessing the env variable:
+    {
+      "run": [{
+        "method": "shell.run",
+        "params": {
+        "message": "./llama-server -m {{env.CHECKPOINT_PATH}}",
+        "path": "llamacpp"
+        }
+      }]
+    }
+    2. User Friendly Interface
+    The built-in editor lets you tweak environment variables without touching the files directly. You can access the ENVIRONMENT editor interface inside the Configure tab in every app.
+
+    3. Sandboxed Environment Variables
+    Normally, setting environment variables require people to change it globally. This is not flexible since every app may have different requirements and you probably want a custom environment for each app.
+    Thanks to Pinokio's isolated architecture, every value set in each app's ENVIRONMENT file is constrained only to the app.
+    4. Pinokio Public Node
+    Now you can open up local Pinokio apps to the public internet.
+    1. Turn your local computer into a public web service
+    Anyone with a browser can connect to your local machine and run the apps you publish as public, powered by Cloudflare tunnel.
+    1. Run an AI inference service from your local computer, which anyone can access.
+    2. Keep your pinokio running at home and connect to it from outside using any device (such as phones)
+
+    2. Add authentication
+    Often you will want to only expose your public node to a select group of people. To achieve this, you can add authentication, which will require any user trying to connect to enter a correct passcode.
+    Turning on authentication is as easy as setting a "passcode" from the share settings page, like this:
+
+    Then whenever someone visits the Cloudflare website, they will need to authenticate with a passcode, like this:
+
+    When you add authentication, you will be able to monitor all the incoming connections, from their IP to the device & browser information as well as which passcode is being used to make the connection:
+    Instantly Stop Scripts
+    When running things locally, stopping an app is as important as starting one, because most personal computers have limited resources and you can't be running all apps at once, and have to optimize your resources.
+    Before
+    Previously, stopping an app wasn't easy. You had to:
+    1. Visit the app page
+    2. Open the app terminal
+    3. And click the stop button once the terminal loaded.
+    Too many clicks.
+    After
+    With 2.0, now you can stop a script from anywhere with one click:
+    Stopping from the home screen:
+    Stopping from the menubar (WITHOUT opening the terminal):
+    Gradio File System
+    A lot of AI apps are powered by gradio, and Pinokio has added some dedicated file system related features to make working with Gradio much more powerful and efficient.
+    - Application File System: all files uploaded through gradio are now stored under the app folder (inside a folder named 'cache') instead of getting stored in an unknown location. Now you can view and manage all your files generated from gradio apps.
+    - Customizable: You can also switch the mode so all the gradio related files across multiple apps are stored deduplicated in one location, by setting the GRADIO_TEMP_DIR environment variable.
+    - Cross-app file sharing: Gradio has a security policy that blocks apps from serving files that are outside of each app's folder. For example, all the image files generated by automatic1111 stable diffusion web ui cannot be served by another app (for example a 3rd party app that serves the image files). This is for security reasons. With Pinokio, since everything happens inside pinokio anyway, Pinokio can expand this policy a bit and allow any app within the Pinokio operating system to be shared with any other app.
+    Disposable Apps
+    - Disposable Mode Install (Default): Previously, if you install an app that uses torch hub files or any file from huggingface (for example through diffusers, transformers, etc.), all these files were stored in a single central location in order to save disk space. While this is ideal in many cases, a lot of times you just want to try an app and when you're done, just delete it, and want all the associated files to be deleted together. This was not possible before, but with 2.0, this is the default option when installing apps. Now every app install is self-contained by default, so when you delete the app folder, all the huge files associated with it will be gone with the app.
+    - Disk Space Save Mode Install: By default, all apps install in a disposable mode. But you can even customize this behavior and let Pinokio store these files globally in a deduplicated manner. This will be useful when you try out an app and decide to keep it. If you think you may want to keep using the app, you may want to reinstall with the deduplication logic on (You can achieve this by deleting the HF_HOME and TORCH_HOME environment variables from the app folder)
+    Virtual drive optimization
+    The previous virtual drive implementation had some issues dealing with edge cases with PIP. This meant many apps could not take advantage of the disk space saving feature provided by the virtual drive.
+    With 2.0, this has been fixed and now all apps can take advantage of the virtual drive feature, saving your disk space significantly more.
+    Conda fix
+    Since the very beginning of Pinokio, we've had several bugs where things wouldn't exactly run in a self-contained manner if you already had Conda installed on your system outside of pinokio. Until now, all the fixes have been adhoc approaches, but with 2.0, it's been fixed on a fundamental level. If you ever had issues with conda, delete the "bin" folder and try reinstalling from scratch. (new users won't have this problem)
+    Install Screen
+    Pinokio has never had a proper "Install screen" until now. Version 2.0 has added a dedicated install screen with the following features:
+    1. Prerequisites Screen
+    Display apps or programs that need to be installed in order to run the app that's about to be installed. This can be declared in the pinokio.js file as follows:
+    module.exports = {
+      title: "Installer",
+      pre: [{
+        text: "Ollama",
+        description: "Get up and running with large language models.",
+        href: "https://ollama.com",
+        icon: "ollama.png",
+      }],
+      ..
+    }
+    When you declare a pre array in pinokio.js, the prerequisite items will show up right before the install screen shows up, like this:
+
+    2. Custom Install Screen
+    By default, users will be presented with a simple install screen right after the download. You can either install with the default settings, or click the "Customize" button to edit the default settings, and then click "Install":
+
+    Community
+    1. Community Docs
+    Community members are welcome to share whatever related to Pinokio. Just create a github repository and add a "pinokio-community" topic, and it will show up on the Community Docs section.
+    If you have any tips or insights using Pinokio, you are welcome to contribute.
+
+    2. Community Scripts
+    In addition to the verified scripts, now there's a dedicated tab for "Community scripts". To list your script here, simply add a "pinokio" topic to your github repo and it will show up here automatically.
+
+    Note that it is still not considered safe to blindly install these scripts. Only the scripts on the verified list is safe to install since they have all been verified to have no malicious code and frozen.
+    Going forward, I am planning to try a new experiment where some apps from this section are eventually promoted to the "Verified scripts" via Pinokio factory. Will explain this further in another post.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/2.0.2
+Version: 2.0.2
+ReleaseTime: 2024-07-17T13:35:16.0000000Z
