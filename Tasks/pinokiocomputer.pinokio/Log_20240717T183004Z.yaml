@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/2.0.3/Pinokio-2.0.3-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 2.0.3.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This is a minor update to fix a little bug with local network sharing for pinokio itself (local sharing for individual apps are working fine, just the local sharing for pinokio itself is broken)
+    For the full release note for the v2, see https://github.com/pinokiocomputer/pinokio/releases/tag/2.0.2
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/2.0.3
+Version: 2.0.3
+ReleaseTime: 2024-07-17T17:39:08.0000000Z
