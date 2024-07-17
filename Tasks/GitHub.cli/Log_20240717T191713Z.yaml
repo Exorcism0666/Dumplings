@@ -1,0 +1,29 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Add --json option to variable get command by @babakks in https://github.com/cli/cli/pull/9128
+    - Add GH_DEBUG to issue template by @TWiStErRob in https://github.com/cli/cli/pull/9167
+    - Fetch variable selected repo relationship when required by @williammartin in https://github.com/cli/cli/pull/9256
+    - build(deps): bump github.com/hashicorp/go-retryablehttp from 0.7.5 to 0.7.7 by @dependabot in https://github.com/cli/cli/pull/9250
+    - Alternate gh attestation trusted-root subcommand by @steiza in https://github.com/cli/cli/pull/9206
+    - fix: indentation in 'gh release create --help' by @cchristous in https://github.com/cli/cli/pull/9296
+    - build(deps): bump actions/attest-build-provenance from 1.3.2 to 1.3.3 by @dependabot in https://github.com/cli/cli/pull/9305
+    - docs: Update documentation for gh repo create to clarify owner by @jessehouwing in https://github.com/cli/cli/pull/9309
+    - Fix panic when calling gh pr view --json stateReason by @williammartin in https://github.com/cli/cli/pull/9307
+    - Add issue create --editor by @notomo in https://github.com/cli/cli/pull/7193
+    - Add pr update-branch command by @babakks in https://github.com/cli/cli/pull/8953
+    New Contributors
+    - @TWiStErRob made their first contribution in https://github.com/cli/cli/pull/9167
+    - @cchristous made their first contribution in https://github.com/cli/cli/pull/9296
+    - @jessehouwing made their first contribution in https://github.com/cli/cli/pull/9309
+    - @notomo made their first contribution in https://github.com/cli/cli/pull/7193
+    Full Changelog: https://github.com/cli/cli/compare/v2.52.0...v2.53.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.53.0
+Version: 2.53.0
+ReleaseTime: 2024-07-17T18:51:32.0000000Z
