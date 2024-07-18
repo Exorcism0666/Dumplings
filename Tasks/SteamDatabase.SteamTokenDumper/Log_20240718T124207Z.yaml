@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/SteamDatabase/SteamTokenDumper/releases/download/2024.07.18/SteamTokenDumper-win-x86.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SteamTokenDumper.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/SteamDatabase/SteamTokenDumper/releases/download/2024.07.18/SteamTokenDumper-win-x64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SteamTokenDumper.exe
+- Architecture: arm64
+  InstallerUrl: https://github.com/SteamDatabase/SteamTokenDumper/releases/download/2024.07.18/SteamTokenDumper-win-arm64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SteamTokenDumper.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: Bump version for new Steam client support
+- Key: ReleaseNotesUrl
+  Value: https://github.com/SteamDatabase/SteamTokenDumper/releases/tag/2024.07.18
+Version: 2024.07.18
+ReleaseTime: 2024-07-18T12:17:54.0000000Z
