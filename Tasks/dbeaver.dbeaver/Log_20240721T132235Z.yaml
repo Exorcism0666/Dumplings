@@ -1,0 +1,64 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.3/dbeaver-ce-24.1.3-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.3/dbeaver-ce-24.1.3-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - SQL Editor:
+                    - Added ability to disconnect from the datasourse when all associated editors were closed (configurable)
+                    - New autocompletion engine was significantly enhanced
+                    - Autocompletion for derived columns in sub-queries was improved
+                    - Autocomplete suggestions inside literals in INSERT INTO were disabled
+                    - Execution of the corrected SQL script was fixed
+                    - 'Recent SQL script' was renamed to the 'Last edited SQL script'
+                    - Short/long object names completion configuration was redesigned
+                - Metadata editor: Composite data types presentation was added for table columns
+                - Data editor: JSON and XML panels performance was enhanced
+                - Data transfer:
+                    - Compress option behavior was fixed
+                    - Wizard window auto-size was fixed
+                - Task management: Broken exported file extension after the task editing was fixed
+                - Dashboards: Project dashboard UX was improved
+                - Connectivity:
+                    - Connections invalidation after sleep mode was added
+                    - Idle connections timeout was fixed
+                - General:
+                    - Establishing connection visualization was added to Database Navigator and Projects
+                    - Tooltip delay on macOS was reduced and became configurable
+                    - Saving script outside the Script folder was fixed
+                    - SVG extension was moved to the PRO version
+                    - Authentication in embedded browser was temporarily disabled on Linux
+                - Databases:
+                    - Altibase:
+                        - Added the ability to compile procedure, function, or package from the UI as well as truncate table and refresh materialized view (thanks to @zennken)
+                        - Added status of the view, materialized view, procedure, function, or package (thanks to @zennken)
+                        - Execution plan parsing error was fixed (thanks to @zennken)
+                    - Clickhouse:
+                        - DateTime32 formatting was fixed
+                        - IPV6 data presentation was added (thanks to @asifjoardar)
+                        - Complex structure display in the Data grid was fixed
+                    - CUBRID:
+                        - View creation was added to the UI (thanks to @longhaseng52)
+                        - Supported keywords for SQL Editor were reviewed and updated (thanks to @rathana-pvs)
+                        - Ability to edit Serial using UI was added (thanks to @longhaseng52)
+                    - DuckDB: Data edit was fixed
+                    - Microsoft Azure driver was updated to version 12.7.0
+                    - Oracle: DDL generation for Oracle Tablespaces was added (thanks to @pandya09)
+                    - PostgreSQL:
+                        - Specific functions were supported in the SQL Editor (thanks to @EastLord)
+                        - Metadata read was fixed
+                    - Redshift:
+                        - Metadata reading for indexes was disabled
+                        - Problems with broken connection were resolved
+                    - SAP IQ: Duplicated output messages were fixed
+                    - Teradata: Database name became optional for connection
+                    - Vertica: Incorrect query execution with the cursor at the end was fixed
+                - Localization:
+                    - Italian localization was updated (thanks to @Gnafu)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.1.3
+Version: 24.1.3
+ReleaseTime: 2024-07-21T13:22:08.0000000Z
