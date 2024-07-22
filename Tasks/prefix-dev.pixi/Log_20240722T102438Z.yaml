@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/prefix-dev/pixi/releases/download/v0.26.1/pixi-x86_64-pc-windows-msvc.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Fixed
+    - Make sure we also build the msi installer by @ruben-arts in #1645
+- Key: ReleaseNotesUrl
+  Value: https://github.com/prefix-dev/pixi/releases/tag/v0.26.1
+Version: 0.26.1
+ReleaseTime: 2024-07-22T09:49:35.0000000Z
