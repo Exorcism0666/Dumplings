@@ -1,0 +1,24 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/14.2.1/UMS-14.2.1.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Summary
+    This release improves file support and fixes bugs, from broken transcoding on some players to the web settings not working on Linux
+    Changes
+    General
+    - Fixed broken transcoding to renderers that do not support 10-bit video (#4797)
+    - Fixed UMS not using default OS languages if only web settings is used (#4788)
+    - Fixed file sorting options not working (#4698) (thanks, @mykeehu!)
+    - Fixed file sort order changing directions
+    - Fixed broken web settings on Linux (#4803)
+    Dependencies
+    - Bump jetty.version from 12.0.10 to 12.0.11 (#4801)
+    - Bump junit5.version from 5.10.2 to 5.10.3 (#4796)
+    - Bump MediaInfo from 24.01.1 to 24.06
+- Key: ReleaseNotesUrl
+  Value: https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/14.2.1
+Version: 14.2.1
+ReleaseTime: 2024-07-11T04:45:54.0000000Z
