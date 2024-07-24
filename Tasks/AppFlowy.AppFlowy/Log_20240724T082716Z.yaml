@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.5/AppFlowy-0.6.5-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.5/AppFlowy-0.6.5-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.6.5 - 24/07/2024
+    New Features
+    - Publish a Database to the Web
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.6.5
+Version: 0.6.5
+ReleaseTime: 2024-07-24T06:55:02.0000000Z
