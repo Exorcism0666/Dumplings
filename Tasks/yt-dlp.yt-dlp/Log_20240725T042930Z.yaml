@@ -1,0 +1,23 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp/releases/download/2024.07.25/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    A description of the various files are in the README
+
+    Changelog
+    Extractor changes
+    - abematv: Adapt key retrieval to request handler framework (#10491) by bashonly
+    - facebook: Fix extraction (#10531) by bashonly
+    - mlbtv: Fix extractor (#10515) by bashonly
+    - tiktok: Fix and deprioritize JSON subtitles (#10516) by bashonly
+    - vimeo: Fix chapters extraction (#10544) by bashonly
+    - youtube: Fix n function name extraction for player 3400486c (#10542) by bashonly
+    Misc. changes
+    - build: Pin setuptools version (#10493) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp/releases/tag/2024.07.25
+Version: 2024.07.25
+ReleaseTime: 2024-07-25T03:36:03.0000000Z
