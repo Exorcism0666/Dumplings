@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cinnyapp/cinny-desktop/releases/download/v4.0.3/Cinny_desktop-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Universal build for MacOS and fix windows build by @kfiven in https://github.com/cinnyapp/cinny-desktop/pull/313
+    - Undo system tray and single instance by @kfiven in https://github.com/cinnyapp/cinny-desktop/pull/312
+    - enable hash router for desktop app by @ajbura in https://github.com/cinnyapp/cinny-desktop/pull/314
+    - https://github.com/ajbura/cinny/releases/tag/v4.0.3
+    Full Changelog: https://github.com/cinnyapp/cinny-desktop/compare/v4.0.1...v4.0.3
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cinnyapp/cinny-desktop/releases/tag/v4.0.3
+Version: 4.0.3
+ReleaseTime: 2024-07-25T06:05:43.0000000Z
