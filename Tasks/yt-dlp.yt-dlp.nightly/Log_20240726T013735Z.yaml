@@ -1,0 +1,19 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.07.25.232820/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/28d485714fef88937c82635438afba5db81f9089
+
+    A description of the various files are in the README
+
+    Changelog
+    Extractor changes
+    - discoveryplus: Support olympics URLs (#10566) by bashonly
+    - tva: Fix extractor (#10567) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.07.25.232820
+Version: 2024.07.25.232820
+ReleaseTime: 2024-07-25T23:34:50.0000000Z
