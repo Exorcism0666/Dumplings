@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/martinrotter/rssguard/releases/download/4.7.3/rssguard-4.7.3-a4e20486b-win10.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Added:
+    - Localizations updated.
+    - Mac OS 13 is now used to build Mac RSS Guard version.
+    - Added Reddit plugin. At this point, this is WIP (!). The plugin will be eventually greatly enhanced in the future, but no ETA. Currently the plugin can do:
+      - OAuth authentication.
+      - Loads list of subscribed subreddits.
+      - Loads list of newest topics from each subreddit.
+    Fixed:
+    - Plugin libraries are now loaded more properly, specifically they should not be loaded more than once.
+    - Time.com feeds were not properly rendered. (#1450)
+    - Drag and drop operations were fixed, although there are some cases where you have to adjust the process, for example when dragging an item "after" the last item in top level.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/martinrotter/rssguard/releases/tag/4.7.3
+Version: 4.7.3
+ReleaseTime: 2024-07-26T05:36:39.0000000Z
