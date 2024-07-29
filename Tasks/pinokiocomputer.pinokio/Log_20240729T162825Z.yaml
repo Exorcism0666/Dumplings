@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/2.1.17/Pinokio-2.1.17-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 2.1.17.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    1. Editor mode
+
+    - Accessible under the "Files" tab
+    - Edit and save files
+    - Run scripts and see them execute on the side terminal
+    - Correctly save files under the /api folder instead of /_api
+    The editor mode was broken for a while but all fixed with this version
+    2. ENVIRONMENT Bug Fix
+    ENVIRONMENT files were incorrectly being generated when inheriting from the system ENVIRONMENT.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/2.1.17
+Version: 2.1.17
+ReleaseTime: 2024-07-29T15:29:11.0000000Z
