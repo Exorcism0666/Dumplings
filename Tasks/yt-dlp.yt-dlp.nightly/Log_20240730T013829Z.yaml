@@ -1,0 +1,24 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.07.29.232758/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/94a1c5e642e468cebeb51f74c6c220434cb47d96
+
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - utils: unified_timestamp: Recognize Sunday (#10589) by bashonly
+    Extractor changes
+    - abematv: Fix availability extraction (#10569) by middlingphys
+    - cbc.ca: player: Fix extractor (#10302) by bashonly, trainman261
+    - discoveryplus: Support olympics URLs (#10566) by bashonly
+    - tva: Fix extractor (#10567) by bashonly
+    - vimeo: review: Fix password-protected video extraction (#10598) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.07.29.232758
+Version: 2024.07.29.232758
+ReleaseTime: 2024-07-29T23:34:23.0000000Z
