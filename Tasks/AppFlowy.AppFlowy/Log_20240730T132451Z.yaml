@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.6/AppFlowy-0.6.6-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.6/AppFlowy-0.6.6-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.6.6 - 30/07/2024
+    New Features
+    - Upgrade your workspace to a premium plan to unlock more features and storage.
+    - Image galleries and drag-and-drop image support in documents.
+    Bug Fixes
+    - Fix minor UI issues on Desktop and Mobile.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.6.6
+Version: 0.6.6
+ReleaseTime: 2024-07-30T12:28:42.0000000Z
