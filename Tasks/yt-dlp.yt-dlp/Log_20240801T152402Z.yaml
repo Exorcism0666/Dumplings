@@ -1,0 +1,35 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp/releases/download/2024.08.01/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - utils: unified_timestamp: Recognize Sunday (#10589) by bashonly
+    Extractor changes
+    - abematv: Fix availability extraction (#10569) by middlingphys
+    - cbc.ca: player: Fix extractor (#10302) by bashonly, trainman261
+    - discoveryplus: Support olympics URLs (#10566) by bashonly
+    - kick: clips: Add extractor (#10572) by luvyana
+    - learningonscreen: Add extractor (#10590) by bashonly, Grub4K
+    - mediaklikk: Fix extractor (#10605) by szantnerb
+    - mlbtv: Fix makeup game extraction (#10607) by bashonly
+    - olympics: Fix extractor (#10604) by bashonly
+    - tva: Fix extractor (#10567) by bashonly
+    - tver: Support olympic URLs (#10600) by vvto33
+    - vimeo: review: Fix password-protected video extraction (#10598) by bashonly
+    - youtube
+      - Change default player clients to ios,tv (#10457) by seproDev
+      - Fix n function name extraction for player 20dfca59 (#10611) by bashonly
+      - Fix age-verification workaround (#10610) by bashonly, Grub4K
+      - Player client maintenance (#10573) by bashonly
+    Misc. changes
+    - cleanup: Miscellaneous: ffd7781 by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp/releases/tag/2024.08.01
+Version: 2024.08.01
+ReleaseTime: 2024-08-01T15:17:52.0000000Z
