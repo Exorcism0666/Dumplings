@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.37.0/WinSSHTerm-2.37.0-x64.msi
+- Architecture: arm64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.37.0/WinSSHTerm-2.37.0-arm64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Added support for OpenSSH certificates
+    - Added the proxy type "Local" to be able to set a custom proxy command
+    - Custom Color Scheme: New button to generate the string for the connection field "Env Color" (Files->Preferences->Color Scheme->Edit)
+    - Script Runner: Removed restriction (sequential runs only) when using HTTP or SOCKS proxy
+    - Bug fix: Changes to a session registry key could fail in some cases
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WinSSHTerm/WinSSHTerm/releases/tag/2.37.0
+Version: 2.37.0
+ReleaseTime: 2024-08-03T10:48:40.0000000Z
