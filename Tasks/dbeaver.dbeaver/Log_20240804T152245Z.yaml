@@ -1,0 +1,40 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.4/dbeaver-ce-24.1.4-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.4/dbeaver-ce-24.1.4-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - SQL Editor:
+                    - Problem markers with semantic error descriptions were added. You can click on the problem description in the tooltip to find out what is wrong with the query.
+                    - INSERT, DELETE, UPDATE, DROP, CREATE, and ALTER statements execution in read-only mode was prohibited
+                    - Smart mode for Blank line state delimiter was improved
+                    - Simultaneous query execution was fixed: if a query is already being executed, you can execute another query in a new tab only
+                    - Composite type field color became visible in the Dark theme
+                    - Completion analyzer performance was enhanced
+                - Data Editor:
+                    - Inline editing of geometry fields was fixed
+                    - New keyboard shortcut Ctrl+Shift+Alt+C has been added to use the advanced copy option with the latest settings, without opening a popup window
+                - Metadata Editor: Generate SQL option in the context menu was fixed
+                - Connectivity: Closing idle connections and default timeout were fixed
+                - General:
+                    - Users can import connections from SQL Workbench and DbVizualizer
+                    - Wayland support on Linux was fixed
+                    - Several code improvements have been made (thanks to @KonstantinRight)
+                - Databases:
+                    - GaussDB driver was added (thanks to @GaussDB-Fans)
+                    - Couchbase: Legacy Couchbase driver was removed
+                    - CUBRID:
+                        - Execution plan was enhanced (thanks to @rathana-pvs)
+                        - Issue with Null datatype was fixed (thanks to @longhaseng52)
+                        - Creating partition option was removed (thanks to @longhaseng52)
+                    - InterSystems IRIS driver was updated to version 2024.1 (thanks to @isc-rsingh)
+                    - PostgreSQL: If the database name is empty, it will be set to the same as the username
+                    - SAP Hana: Additional system table prefix was added (thanks to @kai-morich)
+                    - SQL Server: Ability to upgrade/install the driver was fixed
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.1.4
+Version: 24.1.4
+ReleaseTime: 2024-08-04T15:07:46.0000000Z
