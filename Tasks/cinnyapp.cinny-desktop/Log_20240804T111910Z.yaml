@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cinnyapp/cinny-desktop/releases/download/v4.1.0/Cinny_desktop-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Remove outdated actions by @kfiven in https://github.com/cinnyapp/cinny-desktop/pull/317
+    - Bump softprops/action-gh-release from 2.0.6 to 2.0.8 by @dependabot in https://github.com/cinnyapp/cinny-desktop/pull/310
+    - Bump tauri from 1.6.8 to 1.7.1 in /src-tauri by @dependabot in https://github.com/cinnyapp/cinny-desktop/pull/307
+    - Release v4.1.0 by @kfiven in https://github.com/cinnyapp/cinny-desktop/pull/328
+    Full Changelog: https://github.com/cinnyapp/cinny-desktop/compare/v4.0.3...v4.1.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cinnyapp/cinny-desktop/releases/tag/v4.1.0
+Version: 4.1.0
+ReleaseTime: 2024-08-04T10:25:29.0000000Z
