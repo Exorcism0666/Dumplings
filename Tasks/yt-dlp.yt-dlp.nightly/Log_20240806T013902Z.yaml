@@ -1,0 +1,25 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.08.05.232823/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/406f4c2e47502fffc1b0c210b4ee6487c89a44cb
+
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - jsinterp: Improve slice implementation (#10664) by seproDev
+    Extractor changes
+    - discoveryplusitaly: Support sport and olympics URLs (#10655) by bashonly
+    - olympics: Fix extraction (#10625) by bashonly
+    - youku: Fix extractor (#10626) by hugepower
+    - youtube
+      - Change default player clients to ios,web_creator (#10674) by bashonly
+      - Fix n function name extraction for player b12cc44b (#10668) by seproDev
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.08.05.232823
+Version: 2024.08.05.232823
+ReleaseTime: 2024-08-05T23:35:01.0000000Z
