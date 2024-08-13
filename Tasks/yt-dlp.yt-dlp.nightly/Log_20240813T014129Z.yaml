@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.08.12.232840/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/49f3741a820ed142f6866317c2e7d247b130960e
+
+    A description of the various files are in the README
+
+    Changelog
+    Extractor changes
+    - youtube: Support excluding player_clients in extractor-arg (#10710) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.08.12.232840
+Version: 2024.08.12.232840
+ReleaseTime: 2024-08-12T23:35:58.0000000Z
