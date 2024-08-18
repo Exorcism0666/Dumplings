@@ -1,0 +1,41 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.5/dbeaver-ce-24.1.5-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.1.5/dbeaver-ce-24.1.5-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - SQL Editor:
+                    - Added semantic analysis and Outline viewer support for CREATE and ALTER TABLE queries
+                    - Added presentation for warnings in  semantic analysis results
+                    - Data type icons were redesigned
+                    - SQL error presentation was redesigned
+                    - 'Execute SQL Script' option behavior was fixed
+                    - SQL Output for SQL scripts was fixed
+                    - Output panel opening was fixed
+                    - Column aliases can now be copied with Advanced Copy option (thanks to @dstivanov)
+                    - Column validation for UPDATE SET clause was fixed
+                    - Issue with invalid table name was fixed
+                    - If all tabs with query results are pinned, a new tab with a new query result is created
+                - Data Editor: Paste into the table with no foreign key was fixed
+                - Database Navigator:
+                    - Connection visualization was fixed
+                    - Navigator icons were redesigned
+                - Connectivity: Connection page for custom drivers with the URL template was fixed
+                - General:
+                    - Opening links to local files has been restricted due to a security issue discovered by @LuskaBol
+                    - Improved error handling when trying to use not allowed characters in project name
+                - Databases:
+                    - Altibase: Non-schema objects like Job, Database Link, Directory, and Library are now supported (thanks to @zennken)
+                    - BigQuery: Database monitoring dashboards were added
+                    - GaussDB driver was updated to version 4-1.1 (thanks to @GaussDB-Fans)
+                    - MariaDB: Geometry data type is now supported
+                    - Ocient: Incorrect DDL generation was fixed (thanks to @mjsterckx)
+                    - SQLite: Full text search was improved
+                    - SQL Server: Saving changes in procedures was fixed
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.1.5
+Version: 24.1.5
+ReleaseTime: 2024-08-18T16:20:59.0000000Z
