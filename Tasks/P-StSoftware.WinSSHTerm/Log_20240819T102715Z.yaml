@@ -1,0 +1,16 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.37.3/WinSSHTerm-2.37.3-x64.msi
+- Architecture: arm64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.37.3/WinSSHTerm-2.37.3-arm64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Bug fix: The default PuTTY session got reset on each start of WinSSHTerm causing a loss of manual configuration changes
+    - Bug fix: Some actions in the Trusted Host CAs window could lead to an app crash
+    - Bug fix: Unsupported characters in connection fields that contain a path weren't properly handled
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WinSSHTerm/WinSSHTerm/releases/tag/2.37.3
+Version: 2.37.3
+ReleaseTime: 2024-08-19T10:16:57.0000000Z
