@@ -1,0 +1,26 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.08.19.232821/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/f0bb28504c8c2b75ee3e5796aed50de2a7f90a1b
+
+    A description of the various files are in the README
+
+    Changelog
+    Extractor changes
+    - adn: Fix extractors (#10749) by infanf
+    - asobistage: Support redirected URLs (#10768) by pzhlkj6612
+    - bilibili: Fix festival URL support (#10740) by bashonly, grqz
+    - eurosport: Support local URL variants (#10785) by seproDev
+    - facebook: ads: Fix extractor (#10704) by kclauhk
+    - patreoncampaign: Support API URLs (#10734) by bashonly, hibes
+    - radiko: Extract unique id values (#10726) by garret1317
+    - twitter: spaces: Support video spaces (#10789) by bashonly
+    - youtube: Support excluding player_clients in extractor-arg (#10710) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.08.19.232821
+Version: 2024.08.19.232821
+ReleaseTime: 2024-08-19T23:35:20.0000000Z
