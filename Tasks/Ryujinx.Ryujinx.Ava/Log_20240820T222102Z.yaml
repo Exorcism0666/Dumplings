@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1377/test-ava-ryujinx-1.1.1377-win_x64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: publish/Ryujinx.Ava.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: For more information about this release please check out the official Changelog.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/Ryujinx/release-channel-master/releases/tag/1.1.1377
+Version: 1.1.1377
+ReleaseTime: 2024-08-20T21:26:43.0000000Z
