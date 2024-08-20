@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.7.2/AppFlowy-0.6.7.2-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.7.2/AppFlowy-0.6.7.2-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.6.7.2 - 20/08/2024
+    Bug Fixes
+    - Fixed file upload issue.
+    - Fixed missing slash menu items: todolist and divider.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.6.7.2
+Version: 0.6.7.2
+ReleaseTime: 2024-08-20T13:44:14.0000000Z
