@@ -1,0 +1,19 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/prefix-dev/pixi/releases/download/v0.28.1/pixi-x86_64-pc-windows-msvc.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Changed
+    - Uv upgrade to 0.3.2 by @tdejager in #1900
+    Documentation
+    - Add keyrings.artifacts to the list of project built with pixi by @jslorrma in #1908
+    Fixed
+    - Use default indexes if non where given by the lockfile by @ruben-arts in #1910
+    New Contributors
+    - @jslorrma made their first contribution in #1908
+- Key: ReleaseNotesUrl
+  Value: https://github.com/prefix-dev/pixi/releases/tag/v0.28.1
+Version: 0.28.1
+ReleaseTime: 2024-08-26T09:47:14.0000000Z
