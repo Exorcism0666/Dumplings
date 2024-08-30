@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/uazo/cromite/releases/download/v128.0.6613.114-38b33957e856350381acf1d3d66af866683a1fba/chrome-win.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: chrome-win\chrome.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: see https://github.com/uazo/cromite/issues/1410#issuecomment-2316890892
+- Key: ReleaseNotesUrl
+  Value: https://github.com/uazo/cromite/releases/tag/v128.0.6613.114-38b33957e856350381acf1d3d66af866683a1fba
+Version: 128.0.6613.114
+ReleaseTime: 2024-08-30T07:36:14.0000000Z
