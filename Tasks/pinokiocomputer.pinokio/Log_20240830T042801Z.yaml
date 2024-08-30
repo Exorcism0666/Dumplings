@@ -1,0 +1,10 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/2.14.3/Pinokio-2.14.3-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 2.14.3.exe
+Locale:
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/2.14.3
+Version: 2.14.3
+ReleaseTime: 2024-08-30T03:34:27.0000000Z
