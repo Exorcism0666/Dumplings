@@ -1,0 +1,57 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.2.0/dbeaver-ce-24.2.0-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.2.0/dbeaver-ce-24.2.0-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Changes since 24.1.5:
+                - SQL Editor:
+                    - Fixed highlighting of block $$ for functions and procedures when the semantic analysis option is enabled
+                    - Warning and errors handling and presentation was improved
+                    - Subquery semantic analysis was enhanced
+                    - Improved CREATE and DROP queries handling
+                    - Autocompletion for fully qualified names was fixed
+                    - Duplication of proposals with new completion engine enabled was fixed
+                    - Incorrect suggestions with new completion engine enabled were fixed
+                - AI Assistant:
+                    - Added new model 'gpt-4o-mini'
+                    - Removed deprecated model 'gpt-3.5-turbo-16K'
+                    - Fixed query generation when enabled formatting
+                - Data Editor:
+                    - Some datatypes icons were changed
+                    - Fixed filtering on columns with spaces
+                    - Added an ability to render geometry shapes in their assigned color if a 'color' column is present in the result set
+                    - Improved handling of fully qualified names in Grouping panel according to SQL dialect
+                    - Local links opening was restricted
+                - Datatransfer: Data transfer windows width was fixed
+                - Connectivity: Fixed verification of the 127.0.01 host when connecting via SSH
+                - General:
+                    - Fixed flipping splash screen on macOS Sequoia
+                    - Foreign Data wrappers configurator was fixed
+                    - 'Open auth links in embedded browser' setting was disabled by default
+                    - Search in Preferences was improved: added keywords for reopen, open, Hippie, autosave, and others
+                    - Fixed selection of wrong database when changing connection for database with similar names
+                    - Folder display in Simple view was fixed
+                    - Numeric (DWORD) type parameters in Windows Registry are now supported
+                    - 'Ctrl+Alt+Left / Right' hotkeys for 'Previous Edit Location' and 'Next Edit Location' were fixed
+                - Databases:
+                    - Clickhouse: Filtering by the Date data type was fixed
+                    - MySQL: Error/output log dump was fixed
+                    - PostgreSQL:
+                        - Ordering by interval datatypes in the Data grid was fixed
+                        - Added regexp functions support in SQL Editor (thanks to @anton-erofeev)
+                    - Redshift:
+                        - Connection stability was significantly improved
+                        - DDL presentation was fixed
+                        - Role, User, and Group presentation was fixed
+                    - SQL Server:
+                        - SQL Server driver was updated to version 12.8.0
+                        - Fixed DDL and column display with custom data types
+                - Localization: French localization was updated (thanks to @KawtharAlakri)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.2.0
+Version: 24.2.0
+ReleaseTime: 2024-09-01T16:09:18.0000000Z
