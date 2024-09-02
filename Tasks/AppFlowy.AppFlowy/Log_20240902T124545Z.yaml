@@ -1,0 +1,26 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.8/AppFlowy-0.6.8-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.6.8/AppFlowy-0.6.8-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.6.8 - 02/09/2024
+    New Features
+    - Optimized date picker and mention block.
+    - Added the ability to open database row on mobile.
+    - Added the ability to invite members to workspace on mobile.
+    - Added support for Monochrome theme on Android.
+    - Added AI Bubble button on homepage on mobile.
+    - Settings, trash, members and help & support have been moved into the settings pop up menu.
+    Bug Fixes
+    - Removed Wayland header from AppImage build
+    - Fixed the issue where pasting web image on mobile failed.
+    - Fixed the issue where the name of newly created card in board view didn't show up.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.6.8
+Version: 0.6.8
+ReleaseTime: 2024-09-02T11:05:13.0000000Z
