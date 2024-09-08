@@ -1,0 +1,39 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.09.07.232731/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/46f4c80bc363ee8116c33d37f65202e6c3470954
+
+    A description of the various files are in the README
+
+    Changelog
+    Extractor changes
+    - adn: Fix extractors (#10749) by infanf
+    - asobistage: Support redirected URLs (#10768) by pzhlkj6612
+    - bilibili: Fix festival URL support (#10740) by bashonly, grqz
+    - eurosport: Support local URL variants (#10785) by seproDev
+    - facebook: ads: Fix extractor (#10704) by kclauhk
+    - khanacademy: Fix extractor (#10913) by seproDev
+    - kika: Add extractor (#5788) by 1100101
+    - patreoncampaign: Support API URLs (#10734) by bashonly, hibes
+    - radiko: Extract unique id values (#10726) by garret1317
+    - rutube: Support livestreams (#10844) by pzhlkj6612
+    - samplefocus: Fix extractor (#10947) by seproDev
+    - twitter: spaces: Support video spaces (#10789) by bashonly
+    - vidflex: Add extractor (#10002) by pzhlkj6612
+    - vimeo: Always try to extract original format (#10721) by bashonly (With fixes in e8e6a98 by seproDev)
+    - youtube: Support excluding player_clients in extractor-arg (#10710) by bashonly
+    Networking changes
+    - Request Handler: websockets: Upgrade websockets to 13.0 (#10815) by coletdjnz
+    Misc. changes
+    - build: Pin delocate version for macos (#10901) by bashonly
+    - ci
+      - Add comment sanitization workflow (#10915) by bashonly, Grub4K
+      - Add issue tracker anti-spam protection (#10861) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.09.07.232731
+Version: 2024.09.07.232731
+ReleaseTime: 2024-09-07T23:34:33.0000000Z
