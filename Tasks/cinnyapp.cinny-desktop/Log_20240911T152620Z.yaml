@@ -1,0 +1,14 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cinnyapp/cinny-desktop/releases/download/v4.2.0/Cinny_desktop-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - https://github.com/ajbura/cinny/releases/tag/v4.2.0
+    Full Changelog: https://github.com/cinnyapp/cinny-desktop/compare/v4.1.0...v4.2.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cinnyapp/cinny-desktop/releases/tag/v4.2.0
+Version: 4.2.0
+ReleaseTime: 2024-09-11T14:33:11.0000000Z
