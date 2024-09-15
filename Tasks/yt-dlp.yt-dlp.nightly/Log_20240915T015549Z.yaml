@@ -1,0 +1,66 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.09.14.232748/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/a06bb586795ebab87a2356923acfc674d6f0e152
+
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - utils: mimetype2ext: Recognize aacp as aac (#10860) by bashonly
+    Extractor changes
+    - Fix JW Player format parsing (#10956) by seproDev
+    - Handle decode errors when reading responses (#10868) by bashonly
+    - adn: Fix extractors (#10749) by infanf
+    - asobistage: Support redirected URLs (#10768) by pzhlkj6612
+    - bandcamp: user: Fix extraction (#10328) by bashonly, quad
+    - beacon: Add extractor (#9901) by Deukhoofd
+    - bilibili: Fix festival URL support (#10740) by bashonly, grqz
+    - biliintl: Fix referer header (#11003) by Khaoklong51
+    - eurosport: Support local URL variants (#10785) by seproDev
+    - facebook
+      - ads: Fix extractor (#10704) by kclauhk
+      - reel: Improve metadata extraction by lengzuo
+    - hgtvde: Fix extractor (#10992) by bashonly, rdamas
+    - huya: video: Add extractor (#10686) by hugepower
+    - iprima: Fix zoom URL support (#10959) by otovalek
+    - khanacademy: Fix extractor (#10913) by seproDev
+    - kick: vod: Support new URL format (#10988) by bashonly, grqz
+    - kika: Add extractor (#5788) by 1100101
+    - lnkgo: Remove extractor (#10904) by naglis
+    - patreoncampaign: Support API URLs (#10734) by bashonly, hibes
+    - pinterest: Extend _VALID_URL (#10867) by bashonly, sahilsinghss73
+    - radiko: Extract unique id values (#10726) by garret1317
+    - rtp: Support more subpages (#10787) by Demon000
+    - rutube: Support livestreams (#10844) by pzhlkj6612
+    - samplefocus: Fix extractor (#10947) by seproDev
+    - screenrec: Add extractor (#10917) by naglis
+    - sen: Add extractor (#10952) by seproDev
+    - servus: Fix extractor (#10944) by seproDev
+    - tenplay: Fix extractor (#10928) by aarubui
+    - twitter: spaces: Support video spaces (#10789) by bashonly
+    - vidflex: Add extractor (#10002) by pzhlkj6612
+    - vimeo: Always try to extract original format (#10721) by bashonly (With fixes in e8e6a98 by seproDev)
+    - watchespn: Improve auth support (#10910) by ischmidt20
+    - ximalaya: Add VIP support (#10832) by seproDev, xingchensong
+    - xinpianchang: Fix extractor (#10950) by seproDev
+    - youtube
+      - Add po_token, visitor_data, data_sync_id extractor args (#10648) by bashonly, coletdjnz, seproDev
+      - Support excluding player_clients in extractor-arg (#10710) by bashonly
+      - tab: Fix shorts tab extraction (#10938) by seproDev
+    Networking changes
+    - Fix handler not being added to RequestError (#10955) by coletdjnz
+    - Request Handler: websockets: Upgrade websockets to 13.0 (#10815) by coletdjnz
+    Misc. changes
+    - build: Pin delocate version for macos (#10901) by bashonly
+    - ci
+      - Add comment sanitization workflow (#10915) by bashonly, Grub4K
+      - Add issue tracker anti-spam protection (#10861) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.09.14.232748
+Version: 2024.09.14.232748
+ReleaseTime: 2024-09-14T23:35:16.0000000Z
