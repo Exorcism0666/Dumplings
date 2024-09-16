@@ -1,0 +1,27 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.57.0/gh_2.57.0_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Move non-integration tests to different test file by @codysoyland in https://github.com/cli/cli/pull/9577
+    - Added tenancy aware attestation commands by @kommendorkapten in https://github.com/cli/cli/pull/9542
+    - Added --active flag to the gh auth status command by @velumuruganr in https://github.com/cli/cli/pull/9520
+    - build(deps): bump github.com/sigstore/sigstore-go from 0.6.1 to 0.6.2 by @dependabot in https://github.com/cli/cli/pull/9601
+    - gh attestation verify test for custom OIDC issuers by @bdehamer in https://github.com/cli/cli/pull/9595
+    - Suggest installing Rosetta when extension installation fails due to missing darwin-arm64 binary, but a darwin-amd64 binary is available by @timrogers in https://github.com/cli/cli/pull/9599
+    - Update gh attestation verify bundle parsing and validation errors by @malancas in https://github.com/cli/cli/pull/9564
+    - Suppress attestation verify output when no TTY present by @bdehamer in https://github.com/cli/cli/pull/9612
+    - Use api subdomains for tenant hosts by @williammartin in https://github.com/cli/cli/pull/9618
+    New Contributors
+    - @kommendorkapten made their first contribution in https://github.com/cli/cli/pull/9542
+    - @velumuruganr made their first contribution in https://github.com/cli/cli/pull/9520
+    - @bdehamer made their first contribution in https://github.com/cli/cli/pull/9595
+    - @timrogers made their first contribution in https://github.com/cli/cli/pull/9599
+    Full Changelog: https://github.com/cli/cli/compare/v2.56.0...v2.57.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.57.0
+Version: 2.57.0
+ReleaseTime: 2024-09-16T15:28:54.0000000Z
