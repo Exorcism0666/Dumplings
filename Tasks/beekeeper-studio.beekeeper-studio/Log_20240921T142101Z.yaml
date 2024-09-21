@@ -1,0 +1,11 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v4.6.8/Beekeeper-Studio-Setup-4.6.8.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: Binary primary key fixes, and fixes for libsql
+- Key: ReleaseNotesUrl
+  Value: https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v4.6.8
+Version: 4.6.8
+ReleaseTime: 2024-09-21T13:31:06.0000000Z
