@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/ra3xdh/qucs_s/releases/download/24.3.2/Qucs-S-24.3.2-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Fixed editing of File-type properties #948
+    - Implemented @model[param] syntax recognition for Parameter sweep #948
+    Full Changelog: https://github.com/ra3xdh/qucs_s/compare/24.3.1...24.3.2
+- Key: ReleaseNotesUrl
+  Value: https://github.com/ra3xdh/qucs_s/releases/tag/24.3.2
+Version: 24.3.2
+ReleaseTime: 2024-09-23T18:12:31.0000000Z
