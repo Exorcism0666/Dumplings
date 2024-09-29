@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.37.5/WinSSHTerm-2.37.5-x64.msi
+- Architecture: arm64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.37.5/WinSSHTerm-2.37.5-arm64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Bug fix: Issue when checking versions for PuTTY or WinSCP
+    - Explicitly disable DPI awareness to prevent layout issues
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WinSSHTerm/WinSSHTerm/releases/tag/2.37.5
+Version: 2.37.5
+ReleaseTime: 2024-09-29T13:09:24.0000000Z
