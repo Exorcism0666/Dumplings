@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1403/ryujinx-1.1.1403-win_x64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: publish/Ryujinx.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: For more information about this release please check out the official Changelog.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/Ryujinx/release-channel-master/releases/tag/1.1.1403
+Version: 1.1.1403
+ReleaseTime: 2024-10-01T10:31:08.0000000Z
