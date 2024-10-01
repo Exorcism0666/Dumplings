@@ -1,0 +1,26 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.58.0/gh_2.58.0_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Better messaging for attestation verify custom issuer mismatch error by @bdehamer in https://github.com/cli/cli/pull/9616
+    - Enhance gh repo create docs, fix random cmd link by @andyfeller in https://github.com/cli/cli/pull/9630
+    - Add HasActiveToken method to AuthConfig to refactor auth check for attestation trusted-root command by @BagToad in https://github.com/cli/cli/pull/9635
+    - Improve the suggested command for creating an issue when an extension doesn't have a binary for your platform by @timrogers in https://github.com/cli/cli/pull/9608
+    - Disable auth check for attestation trusted-root command by @bdehamer in https://github.com/cli/cli/pull/9610
+    - build(deps): bump github.com/henvic/httpretty from 0.1.3 to 0.1.4 by @dependabot in https://github.com/cli/cli/pull/9645
+    - Fix tenant-awareness for trusted-root command by @bdehamer in https://github.com/cli/cli/pull/9638
+    - Replace "GitHub Enterprise Server" option with "other" in gh auth login prompting by @jtmcg in https://github.com/cli/cli/pull/9642
+    - build(deps): bump github.com/cpuguy83/go-md2man/v2 from 2.0.4 to 2.0.5 by @dependabot in https://github.com/cli/cli/pull/9634
+    - Add dnf5 instructions to docs/install_linux.md by @its-miroma in https://github.com/cli/cli/pull/9660
+    - build(deps): bump github.com/theupdateframework/go-tuf/v2 from 2.0.0 to 2.0.1 by @dependabot in https://github.com/cli/cli/pull/9688
+    New Contributors
+    - @its-miroma made their first contribution in https://github.com/cli/cli/pull/9660
+    Full Changelog: https://github.com/cli/cli/compare/v2.57.0...v2.58.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.58.0
+Version: 2.58.0
+ReleaseTime: 2024-10-01T20:46:12.0000000Z
