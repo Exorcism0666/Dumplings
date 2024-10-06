@@ -1,0 +1,42 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.2.2/dbeaver-ce-24.2.2-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.2.2/dbeaver-ce-24.2.2-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - SQL Editor:
+                    - 'Cmd+Enter' shortcut was added in addition to 'Ctrl+Enter' on macOS due to the conflict with new system hot keys in Sequoia
+                    - Fixed an error in multiple tab mode execution when the new execution results replaced old ones
+                    - The amount of problems being displayed per script query was limited
+                    - Complicated table qualifiers (database.catalog.schema.user) are now supported
+                    - Fixed incorrect highlighting after the database disconnect
+                    - Query execution time is now displayed in seconds/minutes
+                    - Added an ability to select the text between brackets using 'Ctrl+Shift+]' hot key
+                    - Background Tasks view now shows progress of autocompletion engine
+                - Data Editor:
+                    - Presentation and editing of struct and array data types was significantly improved
+                    - DBeaver can now correctly display negative dates in MySQL databases
+                - Data Transfer: changed icons for collapsed sections to improve the interface readability
+                - Connectivity: fixed error handling when a user loads a driver and has an error with certificates
+                - Navigator:
+                    - Table filters in Simple view were fixed
+                    - Disabled the ability to delete the currently active project
+                - Miscellaneous
+                    - Incorrect sorting in Execution log was fixed
+                    - Issue with not working boolean setting editor was fixed
+                - Databases
+                    - Altibase: added display of the list of tables and indexes within a tablespace (thanks to @zennken)
+                    - CUBRID:
+                        - Added the ability to create, edit, and drop Server via UI (thanks to @longhaseng52)
+                        - Added an ability to create, update, and delete users. (thanks to @rathana-pvs)
+                    - Oracle:
+                        - Added highlighting and validation of public synonyms
+                        - Table autocompletion was fixed
+                    - Virtuoso: replaced static jar file with Maven artifact
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.2.2
+Version: 24.2.2
+ReleaseTime: 2024-10-06T16:43:40.0000000Z
