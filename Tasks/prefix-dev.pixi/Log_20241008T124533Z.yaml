@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/prefix-dev/pixi/releases/download/v0.32.1/pixi-x86_64-pc-windows-msvc.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Fixes
+    - Bump Rust version to 1.81 by @wolfv in #2227
+    Documentation
+    - Pixi-pack, docker, devcontainer by @pavelzw in #2220
+- Key: ReleaseNotesUrl
+  Value: https://github.com/prefix-dev/pixi/releases/tag/v0.32.1
+Version: 0.32.1
+ReleaseTime: 2024-10-08T12:18:24.0000000Z
