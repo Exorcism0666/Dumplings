@@ -1,0 +1,31 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.10.07.232845/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/079a7bc334281d3c13d347770ae5f9f2b7da471a
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - cookies: Fix cookie load error handling (#11140) by Grub4K
+    Extractor changes
+    - applepodcasts: Fix extractor (#10903) by coreywright
+    - cwtv: Fix extractor (#11135) by kclauhk
+    - instagram
+      - Do not hardcode user-agent (#11155) by poyhen
+      - Fix extractor (#11156) by tetra-fox
+    - noodlemagazine: Fix extractor (#11144) by BallzCrasher
+    - patreon: Extract all m3u8 formats for locked posts (#11138) by bashonly
+    - youtube: Change default player clients to ios,mweb (#11190) by seproDev
+    Postprocessor changes
+    - xattrmetadata: Try to write each attribute (#11115) by eric321
+    Misc. changes
+    - ci: Rerun failed tests (#11143) by pukkandan
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.10.07.232845
+Version: 2024.10.07.232845
+ReleaseTime: 2024-10-07T23:39:17.0000000Z
