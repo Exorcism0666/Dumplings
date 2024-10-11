@@ -1,0 +1,19 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.10.10.232848/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/ceaea731b6e314dbbdfb2e358d7677785ed0b4fc
+
+    A description of the various files is in the README
+
+    Changelog
+    Extractor changes
+    - tver: Support series URLs (#9507) by pzhlkj6612, vvto33
+    - weverse: Fix extractor (#11215) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.10.10.232848
+Version: 2024.10.10.232848
+ReleaseTime: 2024-10-10T23:39:04.0000000Z
