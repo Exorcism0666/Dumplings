@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.10.12.232856/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/babb70960595e2146f06f81affc29c7e713e34e2
+
+    A description of the various files is in the README
+
+    Changelog
+    Extractor changes
+    - cwtv: Fix extraction (#11230) by bashonly
+    - drtv: Fix extractor (#11141) by 444995
+    - patreon: campaign: Stricter URL matching (#11235) by bashonly
+    - tver: Support series URLs (#9507) by pzhlkj6612, vvto33
+    - weverse: Fix extractor (#11215) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.10.12.232856
+Version: 2024.10.12.232856
+ReleaseTime: 2024-10-12T23:39:11.0000000Z
