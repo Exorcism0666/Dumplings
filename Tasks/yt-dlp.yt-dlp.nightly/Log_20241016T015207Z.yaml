@@ -1,0 +1,34 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.10.15.232919/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/64d84d75ca8c19ec06558cc7c511f5f4f7a822bc
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Add extractor helpers (#10653) by Grub4K
+    - cookies: Fix compatibility for Python <=3.9 in traceback by Grub4K
+    - utils: sanitize_path: Reimplement function (#11198) by Grub4K
+    Extractor changes
+    - adobepass: Use newer user-agent for provider redirect request (#11250) by bashonly
+    - cwtv: Fix extraction (#11230) by bashonly
+    - drtv: Fix extractor (#11141) by 444995
+    - generic: Impersonate browser by default (#11206) by Grub4K
+    - patreon: campaign: Stricter URL matching (#11235) by bashonly
+    - reddit: Detect and raise when login is required (#11202) by pzhlkj6612
+    - tver: Support series URLs (#9507) by pzhlkj6612, vvto33
+    - weverse: Fix extractor (#11215) by bashonly
+    Misc. changes
+    - build
+      - Use macos-13 image for macOS builds (#11236) by bashonly
+      - make_lazy_extractors: Force running without plugins (#11205) by Grub4K
+    - test: Allow running tests explicitly (#11203) by Grub4K
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.10.15.232919
+Version: 2024.10.15.232919
+ReleaseTime: 2024-10-15T23:40:07.0000000Z
