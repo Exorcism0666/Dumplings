@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/Hibbiki/chromium-win64/releases/download/v130.0.6723.59-r1356013/mini_installer.sync.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/Hibbiki/chromium-win64/releases/download/v130.0.6723.59-r1356013/mini_installer.sync.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: 2ecb70150879cefe80001c09a64aab657d71a6c8 ../out/x64/mini_installer.sync.exe aa79bee883e4b4c14a68fb48224b601961afcbcb ../out/x64/chrome.sync.7z 28272c8390f2d3e3b6ccc71d9a9d7c42121998e9 ../out/x64/mini_installer.nosync.exe 125deeb0e9fe4710aef2b708bd0e6c52dd750a96 ../out/x64/chrome.nosync.7z e466bb37f3dfbc538133bf3b2c17fe8aa5eb7848 ../out/noarch/policy_templates.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/Hibbiki/chromium-win64/releases/tag/v130.0.6723.59-r1356013
+Version: 130.0.6723.59
+ReleaseTime: 2024-10-17T01:05:31.0000000Z
