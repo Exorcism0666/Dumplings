@@ -1,0 +1,27 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/canonical/multipass/releases/download/v1.14.1/multipass-1.14.1+win-win64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Multipass version 1.14.1
+    A bug fix release addressing a number of issues:
+    - Missing snapcraft:24.04/core24 aliases (#3613)
+    - Typo in help text (#3648)
+    - Misplaced delete/shutdown errors (#3591)
+    - stop --force on suspended instances (#3626)
+    - Instance selection on the GUI (#3618)
+    - Missing update notification in the GUI (#3621)
+    - Errors when deleting suspended VMs (#3624, #3606)
+    - Missing update notification on restart (#3672)
+    - Missed failures on stop (#2907)
+    On Windows only:
+    - Inability to detect Hyper-V with screen reader or other PowerShell warnings (#1632)
+    - Missing icon on Windows Terminal profile (#3622)
+    And on macOS:
+    - Inability to start instance on macOS Sequoia (#3661)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/canonical/multipass/releases/tag/v1.14.1
+Version: 1.14.1
+ReleaseTime: 2024-10-17T10:59:36.0000000Z
