@@ -1,0 +1,27 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.2/AppFlowy-0.7.2-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.2/AppFlowy-0.7.2-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.7.2 - 22/10/2024
+    New Features
+    - Copy link to block
+    - Support turn into in document
+    - Enable sharing links and publishing pages on mobile
+    - Enable drag and drop in row documents
+    - Right-click on page in sidebar to open more actions
+    - Create new subpage in document using + character
+    - Allow reordering checklist item
+    Bug Fixes
+    - Fixed issue with inability to cancel inline code format in French IME
+    - Fixed delete with Shift or Ctrl shortcuts not working in documents
+    - Fixed the issues with incorrect time zone being used in filters.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.7.2
+Version: 0.7.2
+ReleaseTime: 2024-10-22T03:36:07.0000000Z
