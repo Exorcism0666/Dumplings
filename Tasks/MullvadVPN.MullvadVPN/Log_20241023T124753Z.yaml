@@ -1,0 +1,41 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/mullvad/mullvadvpn-app/releases/download/2024.6/MullvadVPN-2024.6.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This release is for desktop only.
+    Here is a list of all changes since last stable release 2024.5:
+    Added
+    - Add WireGuard over Shadowsocks obfuscation. It can be enabled in "WireGuard settings". This will also be used automatically when connecting fails with other methods.
+    - Add feature indicators to the main view along with redesigning the connection details.
+    - Add "Smart Routing" feature which simplifies connecting to DAITA-enabled relays.
+    macOS
+    - Add "Apple services bypass" toggle that let's users unblock certain Apple-owned networks. This is a temporary fix to the MacOS 15 issues where some Apple services are being blocked.
+    Changed
+    - Never use OpenVPN as a fallback protocol when any of the following features is enabled: multihop, quantum-resistant tunnels, or DAITA.
+    - Improved output format of mullvad status command, which now also prints feature indicators.
+    - Move DAITA and multihop to the root settings view along with moving multihop into a dedicated view with more information.
+    macOS
+    - Disable split tunnel interface when disconnected. This prevents traffic from being sent through the daemon when the VPN is disconnected.
+    - Enable IPv6 by default. This fixes DNS and routing being broken on some systems.
+    - Proxy DNS queries through a local resolver.
+    Fixed
+    Linux
+    - Set tunnel name to wg0-mullvad for userspace WireGuard.
+    macOS
+    - Exclude programs when executed using a relative path from a shell.
+    - Reduce packet loss when using split tunneling.
+    - Don't block fragmented packets in the PF firewall. Fixes various issues relating to connecting (and general instability) when IP fragmentation is present.
+    - Fix Apple services not working by forcing stray connections out through the VPN tunnel. This fix only applies to Wireguard, OpenVPN is still affected. The "bypass" toggle has been removed.
+    - Disable DNS redirect when custom DNS is set to localhost.
+    New Contributors
+    - @dpaoliello made their first contribution in https://github.com/mullvad/mullvadvpn-app/pull/6315
+    - @magnus-lindstrom made their first contribution in https://github.com/mullvad/mullvadvpn-app/pull/6632
+    - @lamtrinhdev made their first contribution in https://github.com/mullvad/mullvadvpn-app/pull/6670
+    - @arunsathiya made their first contribution in https://github.com/mullvad/mullvadvpn-app/pull/5860
+- Key: ReleaseNotesUrl
+  Value: https://github.com/mullvad/mullvadvpn-app/releases/tag/2024.6
+Version: "2024.6"
+ReleaseTime: 2024-10-23T12:27:20.0000000Z
