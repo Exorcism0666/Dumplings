@@ -1,0 +1,40 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.60.0/gh_2.60.0_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Add ArchivedAt field by @tsukasaI in https://github.com/cli/cli/pull/9790
+    - Include startedAt, completedAt in run steps data by @andyfeller in https://github.com/cli/cli/pull/9774
+    - Adjust environment help for host and tokens by @williammartin in https://github.com/cli/cli/pull/9809
+    - Add handling of empty titles for Issues and PRs by @jtmcg in https://github.com/cli/cli/pull/9701
+    - LiveSigstoreVerifier.Verify should error if no attestations are present by @phillmv in https://github.com/cli/cli/pull/9742
+    - gh at verify retries fetching attestations if it receives a 5xx by @phillmv in https://github.com/cli/cli/pull/9797
+    - Prevent local extension installations with invalid names and conflicts with core commands and other extensions by @BagToad in https://github.com/cli/cli/pull/9794
+    - Rewrite a sentence in CONTRIBUTING.md by @muzimuzhi in https://github.com/cli/cli/pull/9772
+    - Use new GitHub preview terms in working-with-us.md by @BagToad in https://github.com/cli/cli/pull/9800
+    - Use new GitHub previews terminology in attestation commands' help docs by @BagToad in https://github.com/cli/cli/pull/9799
+    - Clarify in README that gh is supported on GitHub Enterprise Cloud by @BagToad in https://github.com/cli/cli/pull/9805
+    - build(deps): bump github.com/gabriel-vasile/mimetype from 1.4.5 to 1.4.6 by @dependabot in https://github.com/cli/cli/pull/9752
+    Acceptance Test Changes
+    - Add acceptance tests for workflow, run, and cache commands by @BagToad in https://github.com/cli/cli/pull/9766
+    - Add basic api acceptance tests by @BagToad in https://github.com/cli/cli/pull/9770
+    - Add acceptance tests for release commands by @BagToad in https://github.com/cli/cli/pull/9771
+    - Add acceptance tests for org and ssh-key commands by @BagToad in https://github.com/cli/cli/pull/9812
+    - Add acceptance tests for gh auth commands by @jtmcg in https://github.com/cli/cli/pull/9787
+    - Add acceptance tests for repo commands by @jtmcg in https://github.com/cli/cli/pull/9783
+    - Add acceptance tests for search command by @BagToad in https://github.com/cli/cli/pull/9786
+    - Add acceptance tests for variable commands by @andyfeller in https://github.com/cli/cli/pull/978
+    - Add testscripts for gpg-key and label commands by @williammartin in https://github.com/cli/cli/pull/9811
+    - Use forked testscript for token redaction by @williammartin in https://github.com/cli/cli/pull/9804
+    - Add acceptance tests for secret commands by @andyfeller in https://github.com/cli/cli/pull/9782
+    - Note token redaction in Acceptance test README by @williammartin in https://github.com/cli/cli/pull/9813
+    New Contributors
+    - @tsukasaI made their first contribution in https://github.com/cli/cli/pull/9790
+    Full Changelog: https://github.com/cli/cli/compare/v2.59.0...v2.60.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.60.0
+Version: 2.60.0
+ReleaseTime: 2024-10-24T17:36:17.0000000Z
