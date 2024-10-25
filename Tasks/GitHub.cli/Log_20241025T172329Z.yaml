@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.60.1/gh_2.60.1_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This is a small patch release to fix installing gh via go install which was broken with v2.60.0.
+    What's Changed
+    - Update testscript to use hard fork by @williammartin in https://github.com/cli/cli/pull/9821
+    Full Changelog: https://github.com/cli/cli/compare/v2.60.0...v2.60.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.60.1
+Version: 2.60.1
+ReleaseTime: 2024-10-25T17:15:00.0000000Z
