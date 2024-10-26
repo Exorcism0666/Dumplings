@@ -1,0 +1,34 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.10.25.232902/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/57212a5f97ce367590aaa5c3e9a135eead8f81f7
+
+    A description of the various files is in the README
+
+    Important changes
+    - Beginning with this release, yt-dlp's Python dependencies must be installed using the default group If you're installing yt-dlp with pip/pipx or requiring yt-dlp in your own Python project, you'll need to specify yt-dlp[default] if you want to also install yt-dlp's optional dependencies (which were previously included by default). Read more
+    - The minimum required Python version has been raised to 3.9 Python 3.8 reached its end-of-life on 2024.10.07, and yt-dlp has now removed support for it. As an unfortunate side effect, the official yt-dlp.exe and yt-dlp_x86.exe binaries are no longer supported on Windows 7. Read more
+    Changelog
+    Core changes
+    - Expand paths in --plugin-dirs (fix 0f593dca9fa995d88eb763170a932da61c8f24dc) (#11334) by bashonly
+    - Remove Python 3.8 support (#11321) by bashonly
+    Extractor changes
+    - facebook: Fix formats extraction (#11343) by kclauhk
+    - generic: Do not impersonate by default (fix edfd095b1917701c5046bd51f9542897c17d41a7) (#11336) by bashonly
+    - vimeo: Fix API retries (fix c1c9bb4adb42d0d93a2fb5d93a7de0a87b6ba884) (#11351) by bashonly
+    Misc. changes
+    - build
+      - Move optional dependencies to the default group (#11255) by bashonly
+      - Use Ubuntu 20.04 and Python 3.9 for Linux ARM builds (#8638) by bashonly
+    - cleanup
+      - Miscellaneous
+        - ea9e35d by bashonly
+        - c998238 by bashonly, KBelmin
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.10.25.232902
+Version: 2024.10.25.232902
+ReleaseTime: 2024-10-25T23:34:25.0000000Z
