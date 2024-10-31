@@ -1,0 +1,48 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.10.30.232923/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/b6dc2c49e8793c6dfa21275e61caf49ec1148b81
+
+    A description of the various files is in the README
+
+    Important changes
+    - Beginning with this release, yt-dlp's Python dependencies must be installed using the default group If you're installing yt-dlp with pip/pipx or requiring yt-dlp in your own Python project, you'll need to specify yt-dlp[default] if you want to also install yt-dlp's optional dependencies (which were previously included by default). Read more
+    - The minimum required Python version has been raised to 3.9 Python 3.8 reached its end-of-life on 2024.10.07, and yt-dlp has now removed support for it. As an unfortunate side effect, the official yt-dlp.exe and yt-dlp_x86.exe binaries are no longer supported on Windows 7. Read more
+    Changelog
+    Core changes
+    - Allow thumbnails with .jpe extension (#11408) by bashonly
+    - Expand paths in --plugin-dirs (#11334) by bashonly
+    - Fix --netrc empty string parsing for Python <=3.10 (#11414) by bashonly, Grub4K
+    - Populate format sorting fields before dependent fields (#11353) by Grub4K
+    - Remove Python 3.8 support (#11321) by bashonly
+    - utils
+      - Allow partial application for more functions (#11391) by bashonly, Grub4K
+      - Fix find_element by class (#11402) by bashonly
+    Extractor changes
+    - Resolve language to ISO639-2 for ISM formats (#11359) by bashonly
+    - ccma: Support new 3cat.cat domain (#11222) by JoseAngelB
+    - cnn: Fix extractor (#10185) by kylegustavo, seproDev
+    - facebook: Fix formats extraction (#11343) by kclauhk
+    - generic: Do not impersonate by default (#11336) by bashonly
+    - niconicouser: Fix extractor (#11324) by Wesley107772
+    - soundcloud: Extract artists (#11377) by seproDev
+    - twitter: Remove cookies migration workaround (#11392) by bashonly
+    - vimeo: Fix API retries (#11351) by bashonly
+    - youtube: Adjust OAuth refresh token handling (#11414) by bashonly
+    Misc. changes
+    - build
+      - Move optional dependencies to the default group (#11255) by bashonly
+      - Use Ubuntu 20.04 and Python 3.9 for Linux ARM builds (#8638) by bashonly
+    - cleanup
+      - Miscellaneous
+        - ea9e35d by bashonly
+        - c998238 by bashonly, KBelmin
+    - devscripts: make_changelog: Parse full commit message for fixes (#11366) by bashonly, Grub4K
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.10.30.232923
+Version: 2024.10.30.232923
+ReleaseTime: 2024-10-30T23:34:40.0000000Z
