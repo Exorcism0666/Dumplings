@@ -1,0 +1,36 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.2.4/dbeaver-ce-24.2.4-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.2.4/dbeaver-ce-24.2.4-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - SQL Editor:
+                    - A warning is now shown instead of an error when a DROP TABLE statement contains IF EXISTS and the table does not exist
+                    - Fixed script execution on disconnected state
+                    - New autocomplete engine now expands the * symbol in SELECT statements when using "Ctrl + Space"
+                    - New autocomplete no longer suggests query-start keywords in the middle of queries
+                    - Metadata requests are no longer sent while typing a query when "Auto-activate on typing" is enabled
+                - Data Editor: exception on disconnection was fixed
+                - Navigator:
+                    - Added the ability to refresh the database connection
+                    - Filters were fixed
+                - Data Transfer: Added the ability to export JSON values as embedded JSON
+                - Connectivity:
+                    - Presentation of driver download errors has been improved for better clarity and user experience
+                    - Finding class in the Driver manager was fixed
+                - Miscellaneous: the Export Window now advances properly when pressing the Enter key
+                - Databases:
+                    - Altibase: Module Memory Usage was added to the system information folder in the navigator tree (thanks to @zennken)
+                    - ClickHouse: Array syntax highlighting has been improved
+                    - CUBRID: "Use SQL to limit fetch size" was set to true (thanks to @hwany7seo)
+                    - Fixed an exception that occurred when creating a column without specifying a data type
+                    - Ingres: driver download was fixed
+                    - Redshift: access to external databases was fixed
+                - Localization: Brazilian Portuguese localization was enhanced (thanks to @brlarini)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.2.4
+Version: 24.2.4
+ReleaseTime: 2024-11-03T18:50:02.0000000Z
