@@ -1,0 +1,31 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.61.0/gh_2.61.0_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Add acceptance test for project command by @jtmcg in https://github.com/cli/cli/pull/9816
+    - Add comprehensive testscript for gh ruleset by @andyfeller in https://github.com/cli/cli/pull/9815
+    - Add comprehensive testscript for gh ext commandset by @andyfeller in https://github.com/cli/cli/pull/9810
+    - Require visibility confirmation in gh repo edit by @andyfeller in https://github.com/cli/cli/pull/9845
+    - Clean up skipped online tests for gh attestation verify by @malancas in https://github.com/cli/cli/pull/9838
+    - gh attestation verify should only verify provenance attestations by default by @malancas in https://github.com/cli/cli/pull/9825
+    - Set dnf5 commands as default by @its-miroma in https://github.com/cli/cli/pull/9844
+    - Fix verbiage for deleting workflow runs by @akx in https://github.com/cli/cli/pull/9876
+    - Bump github.com/creack/pty from 1.1.23 to 1.1.24 by @dependabot in https://github.com/cli/cli/pull/9862
+    - gh attestation verify policy enforcement refactor by @malancas in https://github.com/cli/cli/pull/9848
+    - Simplify Sigstore verification result handling in gh attestation verify by @malancas in https://github.com/cli/cli/pull/9877
+    - Print empty array for gh cache list when --json is provided by @williammartin in https://github.com/cli/cli/pull/9883
+    - Bump actions/attest-build-provenance from 1.4.3 to 1.4.4 by @dependabot in https://github.com/cli/cli/pull/9884
+    - Create the automatic key when specified with -i by @cmbrose in https://github.com/cli/cli/pull/9881
+    - fix: gh pr create -w ignore template flag by @nilvng in https://github.com/cli/cli/pull/9863
+    New Contributors
+    - @akx made their first contribution in https://github.com/cli/cli/pull/9876
+    - @nilvng made their first contribution in https://github.com/cli/cli/pull/9863
+    Full Changelog: https://github.com/cli/cli/compare/v2.60.1...v2.61.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.61.0
+Version: 2.61.0
+ReleaseTime: 2024-11-07T13:14:06.0000000Z
