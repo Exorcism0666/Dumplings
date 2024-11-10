@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.11.09.232836/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/f13df591d4d7ca8e2f31b35c9c91e69ba9e9b013
+
+    A description of the various files is in the README
+
+    Changelog
+    Extractor changes
+    - adobepass: Fix provider requests (#11472) by bashonly
+    - gamedevtv: Add extractor (#11368) by bashonly, stratus-ss
+    Misc. changes
+    - build: Enable attestations for trusted publishing (#11420) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.11.09.232836
+Version: 2024.11.09.232836
+ReleaseTime: 2024-11-09T23:33:54.0000000Z
