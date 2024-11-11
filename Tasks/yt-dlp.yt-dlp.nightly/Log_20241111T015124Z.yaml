@@ -1,0 +1,25 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.11.10.232816/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/b83ca24eb72e1e558b0185bd73975586c0bc0546
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Catch broken Cryptodome installations (#11486) by seproDev
+    Extractor changes
+    - adobepass: Fix provider requests (#11472) by bashonly
+    - gamedevtv: Add extractor (#11368) by bashonly, stratus-ss
+    Misc. changes
+    - build
+      - Enable attestations for trusted publishing (#11420) by bashonly
+      - Pin websockets version to >=13.0,<14 (#11488) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.11.10.232816
+Version: 2024.11.10.232816
+ReleaseTime: 2024-11-10T23:34:42.0000000Z
