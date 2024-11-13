@@ -1,0 +1,36 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.11.12.232900/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/f2a4983df7a64c4e93b56f79dbd16a781bd90206
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Catch broken Cryptodome installations (#11486) by seproDev
+    Extractor changes
+    - adobepass: Fix provider requests (#11472) by bashonly
+    - archive.org: Fix comments extraction (#11527) by jshumphrey
+    - chaturbate: Support alternate domains (#10595) by manavchaudhary1
+    - cloudflarestream: Avoid extraction via videodelivery.net (#11478) by hugovdev
+    - facebook: Fix formats extraction (#11513) by bashonly
+    - gamedevtv: Add extractor (#11368) by bashonly, stratus-ss
+    - goplay: Fix extractor (#11466) by bashonly, SamDecrock
+    - mixchmovie: Add extractor (#10897) by Sakura286
+    - rutube: Rework extractors (#11480) by seproDev
+    - spreaker
+      - Support episode pages and access keys (#11489) by julionc
+      - Support podcast and feed pages (#10968) by subrat-lima
+    Misc. changes
+    - build
+      - Bump PyInstaller version pin to >=6.11.1 (#11507) by bashonly
+      - Enable attestations for trusted publishing (#11420) by bashonly
+      - Pin websockets version to >=13.0,<14 (#11488) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.11.12.232900
+Version: 2024.11.12.232900
+ReleaseTime: 2024-11-12T23:35:16.0000000Z
