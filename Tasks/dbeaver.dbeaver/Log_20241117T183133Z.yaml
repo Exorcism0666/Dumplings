@@ -1,0 +1,49 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.2.5/dbeaver-ce-24.2.5-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.2.5/dbeaver-ce-24.2.5-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - New drivers: New LibSQL/Turso driver was added
+                - SQL Editor:
+                    - Fixed script execution on disconnected state
+                    - New autocompletion behavior was enhanced
+                    - Added execution time in statistics result (thanks to @tlm365)
+                - Query manager: Time column now orders chronologically
+                - Metadata: Indexes have been returned to the unique constraint list, and the proper data type is now set when creating a new column for a new foreign key
+                - Data Editor:
+                    - Fixed an issue with crash caused by too long tooltips
+                    - Row coloring mapping was fixed
+                - Data Transfer: "Minimum column length" was renamed to "Default column length"
+                - Connectivity: "Driver properties" tab in the driver editing dialog was renamed to "Default properties"
+                - Charts and Dashboards:  Fixed charts COUNT for single value
+                - Miscellaneous:
+                    - Windows Server 2016, Windows Server 2012, and Windows 8.1 are supported again
+                    - Snap build was fixed
+                    - Eclipse extension installation was fixed
+                    - Query execution canceling was redesigned
+                    - Issues with unexpectedly closing connections were resolved
+                    - Added references to the actual boolean editor in Preferences
+                - Databases:
+                    - Added support for Hive 4
+                    - Altibase: Lock manager has been added (thanks to @zennken)
+                    - CUBRID:
+                      - Added the ability to create and edit triggers (thanks to @longhaseng52)
+                      - Added sargs, edge and Query parameters to the Execution plan (thanks to @rathana-pvs)
+                    - Oracle: Fixed highlighting for public schemas
+                    - PostgreSQL:
+                        - Added date picker and fixed data saving in the Role editor
+                        - Fixed highlighting for public schemas
+                        - Connection to custom schemas was fixed
+                        - Fixed data change saving in Value Panel
+                    - Teradata:
+                        - Multi-row insert was fixed in data import
+                        - Fixed incorrect display of PERIOD data type
+                        - Max rows handling was improved
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.2.5
+Version: 24.2.5
+ReleaseTime: 2024-11-17T18:06:52.0000000Z
