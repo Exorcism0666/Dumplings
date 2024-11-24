@@ -1,0 +1,26 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.11.23.232923/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/fe70f20aedf528fdee332131bc9b6710e54e6f10
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Add playlist_webpage_url field (#11613) by seproDev
+    Extractor changes
+    - facebook: Support more groups URLs (#11576) by grqz
+    - stripchat: Fix extractor (#11596) by gitninja1234
+    - youtube: tab: Fix playlists tab extraction (#11615) by seproDev
+    Networking changes
+    - Request Handler: websockets: Support websockets 14.0+ (#11616) by coletdjnz
+    Misc. changes
+    - cleanup: Miscellaneous: ccf0a6b by bashonly, pzhlkj6612
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.11.23.232923
+Version: 2024.11.23.232923
+ReleaseTime: 2024-11-23T23:36:26.0000000Z
