@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.5/AppFlowy-0.7.5-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.5/AppFlowy-0.7.5-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.7.5 - 25/11/2024
+    Bug Fixes
+    - Improved chat response parsing
+    - Fixed toggle list icon direction for RTL mode
+    - Fixed cross blocks formatting not reflecting in float toolbar
+    - Fixed unable to click inside the toggle list to create a new paragraph
+    - Fixed open file error 50 on macOS
+    - Fixed upload file exceed limit error
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.7.5
+Version: 0.7.5
+ReleaseTime: 2024-11-26T03:41:47.0000000Z
