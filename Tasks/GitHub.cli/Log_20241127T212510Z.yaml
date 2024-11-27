@@ -1,0 +1,25 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.63.0/gh_2.63.0_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Support bare repo creation by @williammartin in https://github.com/cli/cli/pull/9905
+    - Refactor the getAttestations functions by @malancas in https://github.com/cli/cli/pull/9892
+    - Added a section on manual verification of the relases. by @kommendorkapten in https://github.com/cli/cli/pull/9936
+    - Adding option to return baseRefOid in pr view by @daliusd in https://github.com/cli/cli/pull/9938
+    - Update verification results printing by @malancas in https://github.com/cli/cli/pull/9937
+    - Fix some multiline command documentation to use heredoc strings by @BagToad in https://github.com/cli/cli/pull/9948
+    - Print friendly error when release create fails due to missing workflow OAuth scope by @BagToad in https://github.com/cli/cli/pull/9791
+    Full Changelog: https://github.com/cli/cli/compare/v2.62.0...v2.63.0
+    Security
+    - A security vulnerability has been identified in the GitHub CLI that could leak authentication tokens when cloning repositories containing git submodules hosted outside of GitHub.com and ghe.com.
+      For more information, see https://github.com/cli/cli/security/advisories/GHSA-jwcm-9g39-pmcw
+    New Contributors
+    - @daliusd made their first contribution in https://github.com/cli/cli/pull/9938
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.63.0
+Version: 2.63.0
+ReleaseTime: 2024-11-27T21:10:54.0000000Z
