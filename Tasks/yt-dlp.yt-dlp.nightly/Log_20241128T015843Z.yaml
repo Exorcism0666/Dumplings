@@ -1,0 +1,31 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.11.27.232921/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/00dcde728635633eee969ad4d498b9f233c4a94e
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Add playlist_webpage_url field (#11613) by seproDev
+    Extractor changes
+    - Handle fragmented formats in _remove_duplicate_formats (#11637) by Grub4K
+    - chaturbate: Fix support for non-public streams (#11624) by jkruse
+    - dacast: Fix HLS AES formats extraction (#11644) by bashonly
+    - dropbox: Fix password-protected video extraction (#11636) by bashonly
+    - facebook: Support more groups URLs (#11576) by grqz
+    - stripchat: Fix extractor (#11596) by gitninja1234
+    - tiktok: Deprioritize animated thumbnails (#11645) by bashonly
+    - youtube: tab: Fix playlists tab extraction (#11615) by seproDev
+    Networking changes
+    - Request Handler: websockets: Support websockets 14.0+ (#11616) by coletdjnz
+    Misc. changes
+    - cleanup: Miscellaneous: ccf0a6b by bashonly, pzhlkj6612
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.11.27.232921
+Version: 2024.11.27.232921
+ReleaseTime: 2024-11-27T23:35:44.0000000Z
