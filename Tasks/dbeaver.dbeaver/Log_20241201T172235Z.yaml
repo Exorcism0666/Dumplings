@@ -1,0 +1,45 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.3.0/dbeaver-ce-24.3.0-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.3.0/dbeaver-ce-24.3.0-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Changes since 24.2.5:
+                - Data Editor:
+                    - Row coloring mapping now respects the visual order of columns
+                    - Fixed invalid thread access on editing data in multiple results in one tab mode
+                    - Boolean icons display was fixed
+                    - Ability to detach result tabs is now limited to tabs with data
+                - SQL Editor: underscore in identifiers are now supported in query validation
+                - Navigator:
+                    - Multiline comment display was fixed
+                    - Scrolling during drag-n-drop was fixed
+                - Data Transfer:
+                    - Commit/rollback behavior during the data import was improved
+                    - It's now possible to not specify quote and escape characters during the import of CSV files
+                - New Drivers: GBase 8s is now supported (thanks to @Wintianis)
+                - Miscellaneous:
+                    - Snap build was fixed again
+                    - Fixed connection creation from the "File" option in the main menu
+                    - Fixed an issue where reading generic foreign keys
+                    - Option "Open separate connection setting" on SQL Editor and Metadata pages was disabled for embedded databases
+                - Databases:
+                    - Azure SQL Server: restored the "Show all databases" option in the Connection dialog. And added an error message to guide users on creating a new connection to access other visible databases
+                    - BigQuery: Procedures handling is now supported in SQL editor, including LOOPS, IFs, BEGIN END, and CASE
+                    - MySQL: Fixed an issue with table refresh when the "Server-side object filters" option is disabled
+                    - Oracle: BOOLEAN type is now supported in Data Editor
+                    - PostgreSQL:
+                        - Schema permission editing was fixed
+                        - Default privileges rendering was fixed
+                    - RisingWave: array handling was improved
+                    - SQLite:
+                      - Fixed an issue with duplicate primary key generation in SQL scripts (thanks to @eusebe-cda)
+                    - Fixed an issue with deleting a column without a data type (thanks to @eusebe-cda)
+                    - CSV driver was renamed to CSV Basic
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.3.0
+Version: 24.3.0
+ReleaseTime: 2024-12-01T17:08:56.0000000Z
