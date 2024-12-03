@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.6/AppFlowy-0.7.6-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.6/AppFlowy-0.7.6-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.7.6 - 03/12/2024
+    New Features
+    - Revamped the simple table UI
+    - Added support for capturing images from camera on mobile
+    Bug Fixes
+    - Improved markdown rendering capabilities in AI writer
+    - Fixed an issue where pressing Enter on a collapsed toggle list would add an unnecessary new line
+    - Fixed an issue where creating a document from slash menu could insert content at incorrect position
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.7.6
+Version: 0.7.6
+ReleaseTime: 2024-12-03T13:38:55.0000000Z
