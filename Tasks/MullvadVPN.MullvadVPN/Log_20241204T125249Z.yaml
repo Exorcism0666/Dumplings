@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/mullvad/mullvadvpn-app/releases/download/2024.8/MullvadVPN-2024.8.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This release is for desktop only.
+    This release addresses issues identified in a recent audit. Here is a list of all changes since last stable release 2024.7.
+    Security
+    - Remove invalidly set up alternative stack for fault signal handlers on unix based systems. This prevents potential stack overflow and heap memory corruption. Fixes audit issue MLLVD-CR-24-01.
+    - Remove/disable not signal safe code from fault signal handler on unix based systems. Fixes audit issue MLLVD-CR-24-02.
+    Windows
+    - Fix issue where the installer would allow any executable named taskkill.exe in the working directory to run as admin. This fixes audit issue MLLVD-CR-24-06.
+    Linux
+    - Prevent attackers able to send ARP requests to the device running Mullvad from figuring out the in-tunnel IP. Fixes 2024 audit issue MLLVD-CR-24-03.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/mullvad/mullvadvpn-app/releases/tag/2024.8
+Version: "2024.8"
+ReleaseTime: 2024-12-04T12:51:11.0000000Z
