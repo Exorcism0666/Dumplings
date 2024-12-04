@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.63.1/gh_2.63.1_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Fix formatting in git/client_test.go comments for linter by @BagToad in https://github.com/cli/cli/pull/9969
+    - Bump github.com/gabriel-vasile/mimetype from 1.4.6 to 1.4.7 by @dependabot in https://github.com/cli/cli/pull/9942
+    - Clarify which commands correspond to which DNF version under Linux install instructions by @BagToad in https://github.com/cli/cli/pull/9976
+    - When renaming an existing remote as part of remote creation in gh repo fork, log the change by @timrogers in https://github.com/cli/cli/pull/9983
+    - Fix PR checkout panic when base repo is not in remotes by @williammartin in https://github.com/cli/cli/pull/9992
+    Security
+    - A security vulnerability has been identified in GitHub CLI that could create or overwrite files in unintended directories when users download a malicious GitHub Actions workflow artifact through gh run download.
+      For more information, see https://github.com/cli/cli/security/advisories/GHSA-2m9h-r57g-45pj
+    Full Changelog: https://github.com/cli/cli/compare/v2.63.0...v2.63.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.63.1
+Version: 2.63.1
+ReleaseTime: 2024-12-03T23:33:10.0000000Z

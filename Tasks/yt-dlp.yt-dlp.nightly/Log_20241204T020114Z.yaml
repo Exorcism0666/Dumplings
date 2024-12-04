@@ -1,0 +1,46 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.12.03.232932/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/cfa76f35d25eaf993437df8b833befbbf9255331
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Add playlist_webpage_url field (#11613) by seproDev
+    Extractor changes
+    - Handle fragmented formats in _remove_duplicate_formats (#11637) by Grub4K
+    - bilibili
+      - Always try to extract HD formats (#10559) by grqz
+      - Fix extractor (#11667) by grqz (With fixes in f05a1cd by bashonly, grqz)
+      - Fix subtitles and chapters extraction (#11708) by xiaomac
+    - chaturbate: Fix support for non-public streams (#11624) by jkruse
+    - dacast: Fix HLS AES formats extraction (#11644) by bashonly
+    - dropbox: Fix password-protected video extraction (#11636) by bashonly
+    - duoplay: Fix extractor (#11588) by bashonly, glensc
+    - facebook: Support more groups URLs (#11576) by grqz
+    - instagram: Support share URLs (#11677) by grqz
+    - microsoftembed: Make format extraction non fatal (#11654) by seproDev
+    - mitele: Fix extractor (#11683) by DarkZeros
+    - stripchat: Fix extractor (#11596) by gitninja1234
+    - tiktok: Deprioritize animated thumbnails (#11645) by bashonly
+    - vk: Fix extractors (#11715) by bashonly
+    - youtube
+      - Adjust player clients for site changes (#11663) by bashonly
+      - tab: Fix playlists tab extraction (#11615) by seproDev
+    Networking changes
+    - Request Handler: websockets: Support websockets 14.0+ (#11616) by coletdjnz
+    Misc. changes
+    - cleanup
+      - Bump ruff to 0.8.x (#11608) by seproDev
+      - Miscellaneous
+        - ccf0a6b by bashonly, pzhlkj6612
+        - 2b67ac3 by bashonly, seproDev
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.12.03.232932
+Version: 2024.12.03.232932
+ReleaseTime: 2024-12-03T23:35:41.0000000Z
