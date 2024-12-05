@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.12.04.232942/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/fca3eb5f8be08d5fab2e18b45b7281a12e566725
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - cookies: Add --cookies-from-browser support for MS Store Firefox (#11731) by wesson09
+    Extractor changes
+    - bilibili: Fix HD formats extraction (#11734) by grqz
+    - youtube: Player client maintenance (#11724) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.12.04.232942
+Version: 2024.12.04.232942
+ReleaseTime: 2024-12-04T23:35:54.0000000Z
