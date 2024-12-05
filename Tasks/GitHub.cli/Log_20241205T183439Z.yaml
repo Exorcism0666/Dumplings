@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.63.2/gh_2.63.2_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Use consistent slice ordering in run download tests by @williammartin in https://github.com/cli/cli/pull/10006
+    - Fix bug when fetching bundles from OCI registry by @malancas in https://github.com/cli/cli/pull/10019
+    - Use safepaths for run download by @williammartin in https://github.com/cli/cli/pull/10009
+    - Error for mutually exclusive json and watch flags by @andyfeller in https://github.com/cli/cli/pull/10016
+    Full Changelog: https://github.com/cli/cli/compare/v2.63.1...v2.63.2
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.63.2
+Version: 2.63.2
+ReleaseTime: 2024-12-05T18:15:12.0000000Z
