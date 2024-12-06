@@ -1,0 +1,23 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp/releases/download/2024.12.06/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - cookies: Add --cookies-from-browser support for MS Store Firefox (#11731) by wesson09
+    Extractor changes
+    - bilibili: Fix HD formats extraction (#11734) by grqz
+    - soundcloud: Fix formats extraction (#11742) by bashonly
+    - youtube
+      - Fix n sig extraction for player 3bb1f723 (#11750) by bashonly (With fixes in 4bd2655)
+      - Fix signature function extraction (#11751) by bashonly
+      - Player client maintenance (#11724) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp/releases/tag/2024.12.06
+Version: 2024.12.06
+ReleaseTime: 2024-12-06T16:13:30.0000000Z
