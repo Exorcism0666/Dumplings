@@ -1,0 +1,81 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WalletWasabi/WalletWasabi/releases/download/v2.3.1/Wasabi-2.3.1.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Wasabi Wallet is an easy to use, privacy-focused, open-source, non-custodial, Bitcoin wallet.
+    Download
+    :window: Windows :green_apple: Apple M1/M2 :apple: Apple Intel :penguin: Ubuntu / Debian :penguin: Other Linux
+
+    Release Highlights
+    🪲 Bug Fixes
+    💫 Settings Layout & UI Enhancements
+    ⤴️ Tor Update: Upgraded to v13.5.9
+    🚫 Buy Anything Button Disabled
+    Release Summary
+    Wasabi Wallet v2.3.1 is a stability-focused release packed with critical bug fixes and preparatory changes for upcoming major features.
+    🪲 Notable Bug Fixes
+    - Fixed an issue where the transaction broadcaster displayed an error, while the transaction was successfully broadcast
+    - Resolved a problem with DNS endpoints for remote Bitcoin nodes
+    - Improved the amount decomposer to prevent privacy leaks when using the payment-in-round feature
+    - Fixed sorting tables by amount
+    - Sometimes small rounds were not recognized by the wallet, leading to improper anon score computation
+    💫 Settings & UI Enhancements
+    The Settings layout has been refined, optimizing space for a more streamlined user experience.
+    Additionally, some new UI features have been implemented:
+    - Coin lists now display the address associated with each UTXO
+    - Added functionality to copy addresses directly from the Coin List view
+    - Consistent formatting of Fee Rate to 2 decimals without trailing 0
+    🚫 Buy Anything Button Disabled
+    This feature, launched nearly a year ago, allowed users to access the premium ShopinBit concierge service directly through the wallet.
+    This version disables it, for the following reasons:
+    - Limited usage among users
+    - The same service is fully accessible via the ShopInBit platform
+    - Occupies valuable interface space
+    - Improving the experience would require additional maintenance costs
+    Starting with this release, the button is removed, unless there are active or completed orders.
+    In the next release, the feature will be completely removed from the codebase.
+
+    Installation Guide
+    Download the operating system relevant software package and install Wasabi like you would with any other software on your computer. For a detailed installation guide, including signature verification, see the documentation.
+    Documentation
+    :spider_web: Website :onion: Tor onion site :orange_book: Documentation :grey_question: FAQ
+    Advanced Guide
+    If you want to build or update Wasabi from source code, check out these easy instructions.
+    Wasabi uses reproducible builds, which you can verify with this guide.
+    Requirements
+    - Windows 10 1607+
+    - Windows 11 22000+
+    - macOS 12.0+
+    - Ubuntu 22.04+
+    - Fedora 37+
+    - Debian 11+
+
+    What's Changed
+    Features
+    - Extend context menu to copy address to CoinList by @turbolay in https://github.com/WalletWasabi/WalletWasabi/pull/13534
+    - Coinlist: add address as tooltip when hover over amount by @MarnixCroes in https://github.com/WalletWasabi/WalletWasabi/pull/13539
+    - Payment in coinjoin to P2WSH by @lontivero in https://github.com/WalletWasabi/WalletWasabi/pull/13559
+    - Improve settings layout by @turbolay in https://github.com/WalletWasabi/WalletWasabi/pull/13605
+    Bug fixes
+    - Fix amount sorting regression by @turbolay in https://github.com/WalletWasabi/WalletWasabi/pull/13533
+    - Fix address EndPoint not working correctly after relaunch by @turbolay in https://github.com/WalletWasabi/WalletWasabi/pull/13535
+    - Fix broadcastError out of range by @turbolay in https://github.com/WalletWasabi/WalletWasabi/pull/13580
+    - Fix amount decomposition when payment in round is used by @jirigav in https://github.com/WalletWasabi/WalletWasabi/pull/13598
+    - Fix recognition of small rounds by SmartTransaction by @turbolay in https://github.com/WalletWasabi/WalletWasabi/pull/13610
+    Misc
+    - Trust the coordinator about the banning time by @lontivero in https://github.com/WalletWasabi/WalletWasabi/pull/13560
+    - Disable BuyAnythingButton by @turbolay in https://github.com/WalletWasabi/WalletWasabi/pull/13558
+    - Improve Tor connection error wording by @turbolay in https://github.com/WalletWasabi/WalletWasabi/pull/13581
+    - Update Tor to v13.5.9 by @turbolay in https://github.com/WalletWasabi/WalletWasabi/pull/13587
+    - Remove 'Copy recovery words' by @yahiheb in https://github.com/WalletWasabi/WalletWasabi/pull/13590
+    - Use rounded 2 decimals without trailing 0 for fee rate by @MarnixCroes in https://github.com/WalletWasabi/WalletWasabi/pull/13602
+    New Contributors
+    - @jirigav made their first contribution in https://github.com/WalletWasabi/WalletWasabi/pull/13598
+    Full Changelog: https://github.com/WalletWasabi/WalletWasabi/compare/v2.3.0.0...v2.3.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.3.1
+Version: 2.3.1
+ReleaseTime: 2024-12-07T02:02:59.0000000Z
