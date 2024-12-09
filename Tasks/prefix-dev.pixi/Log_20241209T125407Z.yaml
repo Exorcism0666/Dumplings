@@ -1,0 +1,50 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/prefix-dev/pixi/releases/download/v0.39.1/pixi-aarch64-pc-windows-msvc.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Added
+    - Add proper unit testing for PyPI installation and fix re-installation issues by @tdejager in #2617
+    - Add detailed json output for task list by @jjjermiah in #2608
+    - Add pixi project name CLI by @LiamConnors in #2649
+    Changed
+    - Use fs-err in more places by @Hofer-Julian in #2636
+    Documentation
+    - Remove tclf from community.md📑 by @KarelZe in #2619
+    - Update contributing guide by @LiamConnors in #2650
+    - Update clean cache CLI doc by @LiamConnors in #2657
+    Fixed
+    - Color formatting detection on stdout by @blmaier in #2613
+    - Use correct dependency location for pixi upgrade by @Hofer-Julian in #2472
+    - Regression detached-environments not used by @ruben-arts in #2627
+    - Allow configuring pypi insecure host by @zen-xu in #2521#2622
+    Refactor
+    - Rework CI and use cargo-dist for releases by @baszalmstra in #2566
+    pixi build Preview work
+    - Refactor to [build-system.build-backend] by @baszalmstra in #2601
+    - Remove ipc override from options and give it manually to test by @wolfv in #2629
+    - Pixi build trigger rebuild by @Hofer-Julian in #2641
+    - Add variant config to [workspace.build-variants] by @wolfv in #2634
+    - Add request coalescing for isolated tools by @nichmor in #2589
+    - Add example using rich and pixi-build-python and remove flask by @Hofer-Julian in #2638
+    - (simple) build tool override by @wolfv in #2620
+    - Add caching of build tool installation by @nichmor in #2637
+    New Contributors
+    - @blmaier made their first contribution in #2613
+    Download pixi 0.39.1
+    File Platform Checksum
+    pixi-aarch64-apple-darwin.tar.gz Apple Silicon macOS checksum
+    pixi-x86_64-apple-darwin.tar.gz Intel macOS checksum
+    pixi-aarch64-pc-windows-msvc.zip ARM64 Windows checksum
+    pixi-aarch64-pc-windows-msvc.msi ARM64 Windows checksum
+    pixi-x86_64-pc-windows-msvc.zip x64 Windows checksum
+    pixi-x86_64-pc-windows-msvc.msi x64 Windows checksum
+    pixi-aarch64-unknown-linux-musl.tar.gz ARM64 MUSL Linux checksum
+    pixi-x86_64-unknown-linux-musl.tar.gz x64 MUSL Linux checksum
+- Key: ReleaseNotesUrl
+  Value: https://github.com/prefix-dev/pixi/releases/tag/v0.39.1
+Version: 0.39.1
+ReleaseTime: 2024-12-09T12:44:42.0000000Z
