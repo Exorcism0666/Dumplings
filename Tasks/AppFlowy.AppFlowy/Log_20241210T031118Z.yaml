@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.7/AppFlowy-0.7.7-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.7/AppFlowy-0.7.7-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.7.7 - 09/12/2024
+    Bug Fixes
+    - Fixed sidebar menu resize regression
+    - Fixed AI chat loading issues
+    - Fixed inability to open local files in database
+    - Fixed mentions remaining in notifications after removal from document
+    - Fixed event card closing when clicking on empty space
+    - Fixed keyboard shortcut issues
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.7.7
+Version: 0.7.7
+ReleaseTime: 2024-12-10T01:55:32.0000000Z
