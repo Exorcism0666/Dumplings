@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.0.7/Beekeeper-Studio-Setup-5.0.7.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Disappearing queries
+    - Problems connecting to PSQL
+- Key: ReleaseNotesUrl
+  Value: https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v5.0.7
+Version: 5.0.7
+ReleaseTime: 2024-12-11T18:28:48.0000000Z
