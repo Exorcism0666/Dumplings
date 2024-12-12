@@ -1,0 +1,14 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.0.8/Beekeeper-Studio-Setup-5.0.8.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - fix prevented change in text editor by @azmy60 in https://github.com/beekeeper-studio/beekeeper-studio/pull/2642
+    Full Changelog: https://github.com/beekeeper-studio/beekeeper-studio/compare/v5.0.7...v5.0.8
+- Key: ReleaseNotesUrl
+  Value: https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v5.0.8
+Version: 5.0.8
+ReleaseTime: 2024-12-12T17:00:47.0000000Z
