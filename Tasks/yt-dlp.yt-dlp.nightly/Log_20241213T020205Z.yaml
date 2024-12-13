@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.12.12.232950/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/f6c73aad5f1a67544bea137ebd9d1e22e0e56567
+
+    A description of the various files is in the README
+
+    Changelog
+    Extractor changes
+    - patreon: campaign: Support /c/ URLs (#11756) by bashonly
+    - soundcloud: Fix extraction (#11777) by bashonly
+    - youtube
+      - Fix release_date extraction (#11759) by MutantPiggieGolem1
+      - search_url: Fix playlist searches (#11782) by Crypto90
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.12.12.232950
+Version: 2024.12.12.232950
+ReleaseTime: 2024-12-12T23:36:58.0000000Z
