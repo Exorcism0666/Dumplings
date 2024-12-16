@@ -1,0 +1,287 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.0.0/Pinokio-3.0.0-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.0.0.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    1. Hackable UI
+    With 3.0, you can customize the UI:
+    1. Customize the home page
+    2. Customize the CSS for the app page
+    1. 1. Customizing Home
+    You can customize the home page by creating an index.ejs file.
+    1. 2. Customizing App Page
+    The app page can be styled with a custom CSS
+    2. Error Screen
+    2. 1. Blue Screen
+    When something goes wrong, no more "ENOENT file not found", but instead open a blue screen with an actual relevant error message
+    Breaks when there's an error in the shell
+    - /error: /
+    - /errno /
+    - but ignore /error:.*trition/
+    2. 2. Shell Breakpoint API
+    Additional patterns can be specified when calling shell.run to:
+    1. break when certain pattern happens
+    2. ignore certain patterns even if they match error messages
+
+    3. UV
+    uv (https://github.com/astral-sh/uv) is included by default, so all uv commands can be used in pinokio shells.
+    The disk space deduplication feature to save disk space via fs.link works out of the box, even when using UV.
+
+    4. Disk Usage Display
+    One of the most frequently asked question is "how much disk space does this app take?"
+    3. 0 now displays the disk space size each app occupies.
+
+    5. JSON API
+    - json.get
+    - json.set
+    - json.rm
+    5. 1. json.get
+    load JSON from one or more file paths and assign to local variables.
+    {
+    	"method": "json.get",
+    	"params": {
+    		<key1>: <filepath1>,
+    		<key2>: <filepath2>
+    	}
+    }
+    Example:
+    {
+    	"run": [{
+    		"method": "json.get",
+    		"params": {
+    			"config": "config.json"
+    		}
+    	}, {
+    		"method": "shell.run",
+    		"params": {
+    			"message": "http-server -p {{local.config.port}}"
+    		}
+    	}]
+    }
+    1. First it assigns the contents of config.json to local.config
+    2. Then accesses it with {{local.config.port}}
+    5. 2. json.set
+    set attributes of a JSON file
+    {
+    	"method": "json.set",
+    	"params": {
+    		<filepath1>: {
+    			<key_path1>: <value1>,
+    			<key_path2>: <value2>,
+    			...
+    		},
+    		<filepath2>: {
+    			<key_path1>: <value1>,
+    			<key_path2>: <value2>,
+    			...
+    		},
+    		...
+    	}
+    }
+    Where <key_path> is a dot (.) separated string, where each component can be:
+    - an array index
+    - a key in JSON
+    Example:
+    {
+    	"method": "json.set",
+    	"params": {
+    		"config.json": {
+    			"a": 1,
+    			"b": 2
+    		}
+    	}
+    }
+    If config.json doesn't exist:
+    creates config.json and sets its content:
+    {
+    	"a": 1,
+    	"b": 2
+    }
+    If config.json already existed with the following:
+    {
+    	"a": 0,
+    	"c": 3
+    }
+    The result will be:
+    {
+    	"a": 1,
+    	"b": 2,
+    	"c": 3
+    }
+    5. 3. json.rm
+    removes attributes at keypaths:
+    {
+    	"method": "json.rm",
+    	"params": {
+    		<filepath1>: [<keypath1>, <keypath2>, ...],
+    		<filepath2>: [<keypath1>, <keypath2>, ...]
+    	}
+    }
+    Example:
+    if we start with config.json:
+    {
+    	"a": 1,
+    	"b": 2
+    }
+    if we run
+    {
+    	"method": "json.rm",
+    	"params": {
+    		"config.json": ["a"]
+    	}
+    }
+    The resulting config.json will be:
+    {
+    	"b": 2
+    }
+
+    6. Browser Automation
+    Playwright is included in Pinokio by default, and the API to playwright is exposed via kernel.playwright.
+    You can use this API to write Javascript code which can be controlled by Pinokio scripts, which means you now can not only launch apps, but also automatically interact with them via script.
+    Playwright and a Playwright firefox browser is now included in Pinokio, and can be used in javascript.
+    You can write a Javascript class, which then can be called from a script.
+    First, create a browser.js
+    // browser.js
+    class Browser {
+      async open(req, ondata, kernel) {
+        let { firefox } = kernel.playwright
+        const browser = await firefox.launch({ headless: false, });
+        const context = await browser.newContext({ viewport: null })
+        const page = await context.newPage()
+        await page.goto(req.params.url)
+      }
+    }
+    module.exports = Browser
+    Now we can call this in a run.json script:
+    {
+      "run": [{
+        "uri": "browser.js",
+        "method": "open",
+        "params": {
+          "url": "https://pinokio.computer"
+        }
+      }]
+    }
+    When you run this, this will launch a sandboxed Firefox browser and open https://pinokio.computer
+
+    7. App Setup Wizard
+    Every script now has an additional optional attribute called pre, which lets you express mandatory environment variables that need to be set before each script can run.
+    - If the environment variables are NOT set, it will display the wizard screen where the user can fill out the environment variables
+    - If the environment variables are set, the wizard screen will NOT show up, and automatically use the saved environment variable values.
+    Every script can specify a pre array to specify which environment variables to require before running the script.
+    {
+    	"pre": [{
+    		"env": <ENVIRONMENT VARIABLE NAME>,
+    		"description": <ENVIRONMENT VARIABLE DESCRIPTION>,
+    		"default": <Default value (optional)>
+    	}],
+    	"run": [{
+    		...
+    	}]
+    }
+    Behavior:
+    1. If the required environment variables are already set, the script just proceeds using those environment variables.
+    2. If at least one of the required environment variables are not set, the script does not proceed, and waits until the variables are filled out
+    envs variable
+    now the envs variable is accessible inside templates.
+    {
+    	"method": "json.set",
+    	"params": {
+    		"config.json": {
+    			"PATH": "{{envs.PATH}}"
+    		}
+    	}
+    }
+    Also, the envs variable automatically normalizes the environment variables to uppercased version for the variables whose keys were not uppercase.
+    For example, if only the Path variable was set, the envs variable will include not only the Path value, but also a duplicate version under PATH, resulting in both Path and PATH variables with an identical value.
+
+    8. Huggingface API
+    Pinokio now includes a script API that lets you fully interface with huggingface-cli via JSON-RPC calls.
+    Exposes a dedicated HF api:
+    {
+    	"method": "hf.download",
+    	"params": {
+    		"path": <executing folder path (default is the current path)>,
+    		"_": [<arg1>, <arg2>, ...],
+    		<kwarg1>: <val1>,
+    		<kwarg2>: <val2>,
+    		...
+    	}
+    }
+    Example:
+    {
+    	"method": "hf.download",
+    	"params": {
+    		"path": "app/models",
+    		"_": ["adept/fuyu-8b", "model-00001-of-00002.safetensors"],
+    		"local-dir": "fuyu"
+    	}
+    }
+    internally runs:
+    huggingface-cli download adept/fuyu-8b model-00001-of-00002.safetensors --local-dir fuyu
+
+    9. New FS API
+    9. 1. fs.open
+    {
+    	"method": "fs.open",
+    	"params": {
+    		"path": "<filepath to open>",
+    		"mode": "open"|"view"
+    	}
+    }
+    - mode: "open": open the file
+    - mode: "view" : open file explorer
+    9. 2. fs.cat
+    print the file content
+    {
+    	"method": "fs.cat",
+    	"params": {
+    		"path": "<file path to read from>"
+    	}
+    }
+    9. 3. Open in file explorer via pinokio.js menu
+    Use the fs: "view" attribute to open in file explorer inside pinokio.js
+    {
+    	"menu": [{
+    		"text": "open folder",
+    		"href": "outputs",
+    		"fs": "view"
+    	}]
+    }
+    This is equivalent to "fs": true
+    {
+    	"menu": [{
+    		"text": "open folder",
+    		"href": "outputs",
+    		"fs": true
+    	}]
+    }
+    You can open the file itself (it will open with the default app)
+    {
+    	"menu": [{
+    		"text": "open folder",
+    		"href": "outputs",
+    		"fs": "open"
+    	}]
+    }
+
+    10. Misc
+    10. 1. Port Fix
+    Previous bug where Pinokio could not launch if there's a web server running at port 80
+    - Do not generate dynamic menu items when in home page (only generate dynamically when you visit each app) (Only run config.menu() when an app loads)
+    - Mobile view fix (When loading via local sharing)
+    - Do not automatically merge all JSON files in a folder (Was not being used and was just causing bugs)
+    10. 2. Mac Compatibility Support
+    All shells launch with PYTORCH_ENABLE_MPS_FALLBACK=1 by default, which automatically falls back to CPU when a specific torch feature is not available in MPS
+    10. 3. File Deduplication Fix
+    fs.link had a bug caused by a PIP bug where sometimes the PIP version and the contents don't match.
+    In these cases, creating a virtual drive were buggy because the previous logic was to ignore same folders from the same version.
+    The fix is to overwrite the same folders from the same version instead of ignoring.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.0.0
+Version: 3.0.0
+ReleaseTime: 2024-12-16T15:23:36.0000000Z
