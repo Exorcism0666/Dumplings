@@ -1,0 +1,25 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.8/AppFlowy-0.7.8-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.7.8/AppFlowy-0.7.8-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.7.8 - 18/12/2024
+    New Features
+    - Added support "set to page width" and "distribute columns evenly" for table block
+    - Added support for reordering column/row in table block
+    - Added support inserting multiple lines in table block
+    - Revamped the mention page interactions in AI chat page
+    - Improved the AI referenced sources UI in AI chat page
+    Bug Fixes
+    - Fixed an error when opening files in the database in local mode
+    - Fixed arrow up/down navigation not working for selecting a language in code block
+    - Fixed an issue where deleting multiple blocks using the drag button on the document page didn't work
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.7.8
+Version: 0.7.8
+ReleaseTime: 2024-12-18T01:27:19.0000000Z
