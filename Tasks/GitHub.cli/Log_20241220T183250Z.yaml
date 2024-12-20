@@ -1,0 +1,35 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/2.64.0/gh_2.64.0_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - docs: improve docs for browse command as of #5352 by @ankddev in https://github.com/cli/cli/pull/10025
+    - Open PR against gh-merge-base by @heaths in https://github.com/cli/cli/pull/9712
+    - Add integration tests for gh attestation verify when the bundle-from-oci flag is specified by @malancas in https://github.com/cli/cli/pull/10020
+    - gh repo rename help text clarifies new repo name should not include owner by @BagToad in https://github.com/cli/cli/pull/10044
+    - fix: list branches in square brackets in gh run and gh codespace by @uday-rana in https://github.com/cli/cli/pull/10043
+    - Bump actions/attest-build-provenance from 1.4.4 to 2.1.0 by @dependabot in https://github.com/cli/cli/pull/10056
+    - Bump golang.org/x/crypto from 0.29.0 to 0.31.0 by @dependabot in https://github.com/cli/cli/pull/10070
+    - Improve documentation and error messaging for local extension installations without executables by @BagToad in https://github.com/cli/cli/pull/9933
+    - docs: better document auth scopes by @ankddev in https://github.com/cli/cli/pull/10026
+    - Sigstore verifier logic updates by @malancas in https://github.com/cli/cli/pull/9999
+    - gh pr merge --delete-branch exits with error when merge requested via merge queue by @BagToad in https://github.com/cli/cli/pull/10074
+    - sundry gh at inspect improvements by @phillmv in https://github.com/cli/cli/pull/9954
+    - Support pr view for intra-org forks by @williammartin in https://github.com/cli/cli/pull/10078
+    - Print policy information before verifying attestations by @malancas in https://github.com/cli/cli/pull/9891
+    - Improve error handling in apt setup script by @jobegrabber in https://github.com/cli/cli/pull/10055
+    - Use Windows compatible file name for downloaded attestations when running gh attestation download by @malancas in https://github.com/cli/cli/pull/10051
+    - Bump github.com/cpuguy83/go-md2man/v2 from 2.0.5 to 2.0.6 by @dependabot in https://github.com/cli/cli/pull/10094
+    - Perform all gh attestation verify policy options configuration in the newEnforcementCriteria() function by @malancas in https://github.com/cli/cli/pull/10012
+    New Contributors
+    - @ankddev made their first contribution in https://github.com/cli/cli/pull/10025
+    - @uday-rana made their first contribution in https://github.com/cli/cli/pull/10043
+    - @jobegrabber made their first contribution in https://github.com/cli/cli/pull/10055
+    Full Changelog: https://github.com/cli/cli/compare/v2.63.2...2.64.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/2.64.0
+Version: 2.64.0
+ReleaseTime: 2024-12-20T18:04:52.0000000Z
