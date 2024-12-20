@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.0.31/Pinokio-3.0.31-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.0.31.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    1. Mac OS Sequoia Support + Simpler Patch for Installer
+    Previously you had to run patch.command and enter your system password to "patch" pinokio so you can run it on your mac.
+    However, this method doesn't work anymore from Mac Sequoia. From this version the Pinokio installer ships with Sentinel, which takes care of this with a simpler UX. Which also means now Pinokio works on Sequoia.
+    2. More customization
+    Based on feedback, now there's one more CSS you can customize.
+    Previously while you could customize the Browser chrome and the terminal, you couldn't customize the wrapper and the UI that wraps the terminal (which itself is wrapped by the Browser chrome). For example:
+
+    3. 0.31 lets you customize those parts with an additional CSS named web/public/terminal.css. You can test this by pulling the latest version of PSP and installing it https://github.com/pinokiocomputer/psp/blob/main/web/public/terminal.css
+    With this, now you have full control over the style of each app page. Here's an example (Now the entire screen has the same theme):
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.0.31
+Version: 3.0.31
+ReleaseTime: 2024-12-20T15:57:55.0000000Z
