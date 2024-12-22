@@ -1,0 +1,54 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.3.1/dbeaver-ce-24.3.1-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.3.1/dbeaver-ce-24.3.1-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - SQL Editor:
+                    - Added AS before table alias in FROM clause for all relevant databases
+                    - New autocompletion: added support for USING and some improvements for JOIN condition
+                    - Fixed indentation behavior when adding a new line
+                    - Added support for ${time} variable in data source variables for script templates (thanks to @pajonas)
+                - Data Editor:
+                    - Cell hints were redesigned. You can configure them on the Context menu
+                    - Added support for the composite types for Grouping panel
+                    - Items with the too long text in query history were truncated
+                - Navigator: Saving filter for database objects was fixed
+                - Data Transfer: Added the ability to use comma as a delimiter in the Advanced Copy option (thanks to @GFreitasW)
+                - Connectivity: Proxy configuration loading was fixed
+                - Miscellaneous:
+                    - Proper names for catalog/schema are now used for different drivers
+                    - Added word wrap for hints to controls
+                    - Search in Preferences was improved
+                    - Scrolling in the "Tip of the day" window was fixed
+                    - Metadata configuration files were moved to the .metadata/config folder
+                    - Localization of basic controls, settings, and menu items was fixed
+                    - We migrated to Eclipse 2024-12
+                - Development:
+                    - .gitignore for IDEA files was configured (thanks to @anton-erofeev)
+                    - Building IDEA project was fixed
+                - New Drivers: Databend database was added (thanks to @rad-pat)
+                - Databases:
+                    - CUBRID: Added REUSE_OID, COLLATE, and COMMENT to the table DDL (thanks to @longhaseng52)
+                    - Google BigQuery driver was updated to version 42_1.5.4.1008
+                    - InterSystem IRIS driver was updated (thanks to @bdeboe)
+                    - MySQL:
+                        - Now users can change expired password
+                        - Added a setting to not export routines (thanks to @pajonas)
+                    - OpenEdge: query generation was fixed
+                    - OrientDB driver was updated
+                    - PostgreSQL:
+                        - Added default privileges grantor to DDL
+                        - Syntax error in DDL generated for the role settings was fixed
+                        - Default privileges for new roles were fixed
+                    - Salesforce Data Cloud driver was updated
+                    - Snowflake: Added support for table aliases in autocompletion
+                    - SQLite: creating new constraint from selection was fixed (thanks to @eusebe-cda)
+                    - SQL Server: Primary Key ordering in DDL generation is now respected
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.3.1
+Version: 24.3.1
+ReleaseTime: 2024-12-22T16:34:47.0000000Z
