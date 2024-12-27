@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.12.26.232815/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/0b6b7742c2e7f2a1fcb0b54ef3dd484bab404b3f
+
+    A description of the various files is in the README
+
+    Changelog
+    Extractor changes
+    - youtube: Fix DASH formats incorrectly skipped in some situations (#11910) by coletdjnz
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.12.26.232815
+Version: 2024.12.26.232815
+ReleaseTime: 2024-12-26T23:34:51.0000000Z
