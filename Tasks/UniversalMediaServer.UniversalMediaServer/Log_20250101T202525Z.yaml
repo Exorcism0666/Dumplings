@@ -1,0 +1,67 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/14.8.0/UMS-14.8.0.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Summary
+    This release is packed!
+    After many years of requests, we have finally figured out how to support seeking in transcoded content on LG TVs. This, combined with our Dolby Vision support, puts us ahead of any media server software we have tested for LG TVs.
+    We have also added a new 64-bit Windows installer with an optional portable install mode, in addition to the existing one, improved accessibility of the web player, and more!
+    Edit: Some users are experiencing problems with the x64 installer, so we have removed that for now. Thanks to all who reported it.
+    Changes
+    General
+    - Added keyboard shortcuts for web player (#5081) (thanks, @SpitFire-666!)
+    - Added titles to the web player and settings (#5039) (thanks, @SpitFire-666!)
+    - Added Patreon button to automatic updater, to allow our patrons to update more easily:
+    - Added new x86-64 Windows installer
+    - Added portable install option to the new Windows installer
+    - Added current user install option to new Windows installer
+    - Added update mode to new Windows installer
+    - Changed default shared folders on Linux to the user's video/music/pictures instead of their home folder (#5095) (thanks, @ryncor21!)
+    - Improved browsing performance
+    - Fixed UPnP genre
+    - Fixed excessive logging by default
+    - Fixed archive file handling (#5025) (thanks, seisuke!)
+    - Fixed not parsing media in archives
+    - Fixed web player not working when API lookups are disabled (#5094) (thanks, @ryncor21!)
+    - Fixed VS Code debugging missing task on macOS
+    - Fixed not using all users installation directory on Windows
+    - Fixed all users install on Windows not sharing all users directory
+    Media players
+    - Renamed VLC iOS renderer to indicate it is for macOS too
+    - Fixed seeking in transcoded videos on LG TVs
+    Translation updates via Crowdin
+    - Czech (100%)
+    - Finnish (67%) (thanks, Esko Gardner!)
+    - Hungarian (89%) (thanks, Zoltán Rózsa!)
+    - Korean (100%) (thanks, VenusGirl!)
+    - Portuguese (80%) (thanks, Filipe Boleto!)
+    - Russian (91%) (thanks, Dmitry Yerokhin!)
+    - Slovak (48%) (thanks, Patrn!)
+    - Turkish (100%) (thanks, Burak Yavuz!)
+    Dependencies
+    - Bump @eslint/plugin-kit from 0.2.0 to 0.2.3 (#5110)
+    - Bump @mantine/core from 7.13.4 to 7.14.1 (#5108, #5116)
+    - Bump @mantine/dropzone from 7.13.4 to 7.14.1 (#5108, #5116)
+    - Bump @mantine/form from 7.13.4 to 7.14.1 (#5108, #5116)
+    - Bump @mantine/hooks from 7.13.4 to 7.14.1 (#5108, #5116)
+    - Bump @mantine/modals from 7.13.4 to 7.14.1 (#5108, #5116)
+    - Bump @mantine/notifications from 7.13.4 to 7.14.1 (#5108, #5116)
+    - Bump @types/lodash from 4.17.12 to 4.17.13 (#5090)
+    - Bump com.zaxxer:HikariCP from 6.0.0 to 6.2.1 (#5104, #5123)
+    - Bump cross-spawn from 7.0.3 to 7.0.5 (#5112)
+    - Bump eslint-plugin-react-hooks from 4.6.2 to 5.0.0 (#5031)
+    - Bump eslint-plugin-react-refresh from 0.4.13 to 0.4.14 (#5092)
+    - Bump org.eclipse.jetty:jetty-client from 12.0.14 to 12.0.15 (#5122)
+    - Bump org.eclipse.jetty.ee10:jetty-ee10-servlet from 12.0.14 to 12.0.15 (#5122)
+    - Bump org.eclipse.jetty.http2:jetty-http2-server from 12.0.14 to 12.0.15 (#5122)
+    - Bump org.junit.jupiter:junit-jupiter-api from 5.11.2 to 5.11.3 (#5087)
+    - Bump react-router-dom from 6.27.0 to 6.28.0 (#5118)
+    - Bump typescript-eslint from 8.12.1 to 8.14.0 (#5106)
+    - Bump vite from 5.4.9 to 5.4.11 (#5107)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/14.8.0
+Version: 14.8.0
+ReleaseTime: 2024-11-27T07:37:04.0000000Z
